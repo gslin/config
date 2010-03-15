@@ -1,0 +1,14 @@
+[alias]
+    ci = commit
+    co = checkout
+    gl = log --graph --pretty=oneline
+    glog = log --graph
+    st = status
+[color]
+    ui = auto
+[pull]
+    rebase = yes
+[user]
+    email = darkkiller@gmail.com
+    name = Gea-Suan Lin
+    pager = most
