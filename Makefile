@@ -3,7 +3,7 @@ GIT?=		git
 
 #
 pull:
-	${GIT} pull -v
+	${GIT} pull -v --rebase origin master
 
 push:
 	${GIT} push origin master
