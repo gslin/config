@@ -6,8 +6,6 @@
     st = status
 [color]
     ui = auto
-[pull]
-    rebase = yes
 [user]
     email = darkkiller@gmail.com
     name = Gea-Suan Lin
