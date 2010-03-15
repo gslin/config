@@ -7,5 +7,5 @@ all: pull
 pull:
 	${GIT} pull -v --rebase origin master
 
-push:
+push: pull
 	${GIT} push origin master
