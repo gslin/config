@@ -19,12 +19,11 @@ alias s="screen"
 alias ssh="ssh -4 -C -e none"
 alias t="telnet"
 #
+export EDITOR="/usr/bin/vim"
+export PAGER="/usr/bin/most"
+#
 shopt -s checkwinsize
 shopt -s histappend
-#
-if [ -z "$PS1" ]; then
-    return
-fi
 #
 if [ -z "$WINDOW" ]; then
     PS1='\[\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]] '
