@@ -19,6 +19,8 @@ alias s="screen"
 alias ssh="ssh -4 -C -e none"
 alias t="telnet"
 #
+complete -d cd
+#
 export EDITOR="vim"
 export GIT_PAGER="less"
 export LESS="-EfmrSw"
