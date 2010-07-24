@@ -7,7 +7,7 @@ alias cls="clear"
 alias d="dir"
 alias dir="ls -l"
 alias f="finger"
-alias g="grep --color=auto --mmap"
+alias g="grep --color=auto"
 alias l="last"
 alias lo="logout"
 alias ls="ls --color=auto -aF"
@@ -19,8 +19,12 @@ alias s="screen"
 alias ssh="ssh -4 -C -e none"
 alias t="telnet"
 #
-export EDITOR="/usr/bin/vim"
-export PAGER="/usr/bin/most"
+complete -d cd
+#
+export EDITOR="vim"
+export GIT_PAGER="less"
+export LESS="-EfmrSw"
+export PAGER="most"
 #
 shopt -s checkwinsize
 shopt -s histappend
