@@ -22,7 +22,7 @@ alias psm "psu $USER"
 alias psr "psu root"
 alias psu "/bin/ps -w -U \!* | less -EmrSw"
 alias s "/usr/local/bin/screen"
-alias ssh "/usr/bin/ssh -4 -C -e none -o ForwardAgent=yes"
+alias ssh "/usr/bin/ssh -4 -C -e none"
 alias t "telnet"
 #
 set autoexpand
