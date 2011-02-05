@@ -1,7 +1,8 @@
 set background=dark
 set cindent
+set encoding=utf8
 set fileencoding=utf8
-set fileencodings=utf8,cp950,latin1
+set fileencodings=ucs-bom,utf8,cp950,latin1
 set hls
 set incsearch
 set nobomb
