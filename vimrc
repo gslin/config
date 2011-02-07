@@ -6,11 +6,13 @@ set fileencodings=ucs-bom,utf8,cp950,latin1
 set hlsearch
 set ignorecase
 set incsearch
+set laststatus=2
 set nobomb
 set nocompatible
 set ruler
 set scrolloff=3
 set secure
+set showmatch
 set smartcase
 set t_Co=256
 set visualbell
