@@ -9,6 +9,7 @@ set incsearch
 set laststatus=2
 set nobomb
 set nocompatible
+set number
 set ruler
 set scrolloff=3
 set secure
