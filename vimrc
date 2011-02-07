@@ -19,3 +19,4 @@ set t_Co=256
 set visualbell
 set wildmenu
 syntax on
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
