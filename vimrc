@@ -4,10 +4,12 @@ set encoding=utf8
 set fileencoding=utf8
 set fileencodings=ucs-bom,utf8,cp950,latin1
 set hlsearch
+set ignorecase
 set incsearch
 set nobomb
 set nocompatible
 set ruler
 set secure
+set smartcase
 set t_Co=256
 syntax on
