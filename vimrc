@@ -9,6 +9,7 @@ set incsearch
 set nobomb
 set nocompatible
 set ruler
+set scrolloff=3
 set secure
 set smartcase
 set t_Co=256
