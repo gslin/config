@@ -3,11 +3,11 @@ set cindent
 set encoding=utf8
 set fileencoding=utf8
 set fileencodings=ucs-bom,utf8,cp950,latin1
-set hls
+set hlsearch
 set incsearch
 set nobomb
 set nocompatible
-set ru
+set ruler
 set secure
 set t_Co=256
 syntax on
