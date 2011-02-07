@@ -13,4 +13,6 @@ set scrolloff=3
 set secure
 set smartcase
 set t_Co=256
+set visualbell
+set wildmenu
 syntax on
