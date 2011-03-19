@@ -9,6 +9,8 @@
     ui = auto
 [core]
     preloadindex = yes
+[merge]
+    tool = vimdiff
 [user]
     email = darkkiller@gmail.com
     name = Gea-Suan Lin
