@@ -2,8 +2,8 @@
     ci = commit
     co = checkout
     di = diff
-    gl = log --graph --pretty=oneline
-    glog = log --graph
+    gl = log --decorate --graph --pretty=oneline
+    glog = log --decorate --graph
     st = status --short
 [color]
     ui = auto
