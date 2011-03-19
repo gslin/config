@@ -3,9 +3,11 @@
     co = checkout
     gl = log --graph --pretty=oneline
     glog = log --graph
-    st = status
+    st = status --short
 [color]
     ui = auto
+[core]
+    preloadindex = yes
 [user]
     email = darkkiller@gmail.com
     name = Gea-Suan Lin
