@@ -36,4 +36,5 @@ setenv EDITOR "/usr/local/bin/vim"
 setenv LESS "-EfmrSw"
 setenv LSCOLORS "gxfxcxdxbxegedabagacad"
 setenv PAGER "/usr/local/bin/most"
+setenv PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/"
 setenv VISUAL $EDITOR
