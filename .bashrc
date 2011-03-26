@@ -23,6 +23,8 @@ alias ssh="ssh -4 -C -e none"
 alias t="telnet"
 #
 complete -d cd
+complete -d rmdir
+complete -c sudo
 #
 export EDITOR="vim"
 export GIT_PAGER="less"
@@ -38,3 +40,5 @@ if [ -z "$WINDOW" ]; then
 else
     PS1='\[\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]/\[\e[36m\]W$WINDOW\[\e[0m\]] '
 fi
+#
+source ~/perl5/perlbrew/etc/bashrc
