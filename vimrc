@@ -1,6 +1,7 @@
 set background=dark
 set cindent
 set encoding=utf8
+set expandtab
 set fileencoding=utf8
 set fileencodings=ucs-bom,utf8,cp950,latin1
 set hlsearch
