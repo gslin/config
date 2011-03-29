@@ -1,6 +1,3 @@
-nmap <Esc>[Z <C-w>W
-nmap <Tab> <C-w>w
-set background=dark
 set cindent
 set cursorline
 set encoding=utf8
@@ -26,5 +23,14 @@ set t_Co=256
 set visualbell
 set wildmenu
 syntax on
+"
+" color schema
+set background=dark
+"
+" keybinding
+nmap <Esc>[Z <C-w>W
+nmap <Tab> <C-w>w
+"
+" other
 au BufNewFile,BufRead *.psgi setf perl
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
