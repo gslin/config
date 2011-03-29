@@ -24,7 +24,6 @@ alias t="telnet"
 #
 complete -d cd
 complete -d rmdir
-complete -c sudo
 #
 export EDITOR="vim"
 export GIT_PAGER="less"
