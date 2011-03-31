@@ -1,5 +1,6 @@
 set cindent
 set cursorline
+set directory=~/tmp
 set encoding=utf8
 set expandtab
 set fileencoding=utf8
