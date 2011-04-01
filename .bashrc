@@ -40,4 +40,7 @@ else
     PS1='\[\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]/\[\e[36m\]W$WINDOW\[\e[0m\]] '
 fi
 #
+if [ -r /etc/profile.d/bash_completion.sh ]; then
+    source /etc/profile.d/bash_completion.sh
+fi
 source ~/perl5/perlbrew/etc/bashrc
