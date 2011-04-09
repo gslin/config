@@ -34,4 +34,5 @@ nmap <Tab> <C-w>w
 "
 " other
 au BufNewFile,BufRead *.psgi setf perl
+au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
