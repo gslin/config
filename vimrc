@@ -27,6 +27,7 @@ syntax on
 "
 " color schema
 set background=dark
+highlight CursorLine cterm=none ctermbg=darkblue
 "
 " keybinding
 nmap <Esc>[Z <C-w>W
