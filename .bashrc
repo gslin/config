@@ -27,7 +27,7 @@ complete -d rmdir
 #
 export EDITOR="vim"
 export GIT_PAGER="less"
-export LESS="-EfmrSw"
+export LESS="-EfmrSwX"
 export PAGER="most"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/"
 #
