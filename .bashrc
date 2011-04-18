@@ -41,3 +41,5 @@ else
 fi
 #
 source ~/perl5/perlbrew/etc/bashrc
+#
+cd "${HOME}"
