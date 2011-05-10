@@ -29,7 +29,7 @@ export EDITOR="vim"
 export GIT_PAGER="less"
 export LESS="-EfmrSwX"
 export PAGER="most"
-export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/"
+export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 #
 shopt -s checkwinsize
 shopt -s histappend
