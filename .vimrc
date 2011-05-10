@@ -18,6 +18,7 @@ set number
 set ruler
 set scrolloff=3
 set secure
+set shiftwidth=4
 set showmatch
 set smartcase
 set t_Co=256
@@ -27,6 +28,7 @@ syntax on
 "
 " color schema
 set background=dark
+"colo ir_black
 highlight CursorLine cterm=none ctermbg=darkblue
 highlight Search cterm=none ctermbg=blue
 "
