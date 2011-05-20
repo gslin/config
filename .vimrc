@@ -29,7 +29,6 @@ syntax on
 " color schema
 set background=dark
 "colo ir_black
-highlight CursorLine cterm=none ctermbg=darkblue
 highlight Search cterm=none ctermbg=blue
 "
 " keybinding
