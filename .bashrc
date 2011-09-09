@@ -22,8 +22,8 @@ alias s="screen"
 alias ssh="ssh -4 -C -e none -v"
 alias t="telnet"
 #
-complete -d cd
-complete -d rmdir
+complete -o dirnames -o default cd
+complete -c -o default sudo
 #
 export EDITOR="vim"
 export GIT_PAGER="less"
