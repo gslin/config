@@ -28,7 +28,7 @@ syntax on
 "
 " color schema
 set background=dark
-"colo ir_black
+colo wombat256mod
 highlight Search cterm=none ctermbg=blue
 "
 " keybinding
