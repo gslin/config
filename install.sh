@@ -8,4 +8,4 @@ git submodule update --init
 # vim
 cp ${BASEDIR}/.vimrc ~/.vimrc
 mkdir -p ~/.vim
-cp -R ${BASEDIR}/.vim/* ~/.vim/
+rsync -a ${BASEDIR}/.vim/ ~/.vim/
