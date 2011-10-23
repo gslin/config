@@ -10,7 +10,6 @@ alias f="finger"
 alias g="grep --color=auto"
 alias l="last"
 alias lo="logout"
-alias ls="ls --color=auto -aF"
 alias m="more"
 alias md="mkdir"
 alias more="most"
@@ -33,6 +32,13 @@ export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cp
 #
 shopt -s checkwinsize
 shopt -s histappend
+#
+if [ "`uname -s`" == "FreeBSD" ]; then
+    alias ls="/bin/ls -aFGg"
+    alias w="/usr/bin/w -i"
+else
+    alias ls="/bin/ls -aF --color=always"
+fi
 #
 if [ -z "$WINDOW" ]; then
     PS1='\[\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]] '
