@@ -38,9 +38,11 @@ nmap <Tab> <C-w>w
 " template
 function LoadPHPTemplate()
     0r ~/.vim/template/production.php
+    normal Gdd
 endfunction
 function LoadPerlTemplate()
     0r ~/.vim/template/production.pl
+    normal Gdd
 endfunction
 
 autocmd BufNewFile *.pl call LoadPerlTemplate()
