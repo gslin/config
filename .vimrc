@@ -37,10 +37,10 @@ nmap <Tab> <C-w>w
 "
 " template
 function LoadPHPTemplate()
-    0r ~/.vim/template/production.pl
+    0r ~/.vim/template/production.php
 endfunction
 function LoadPerlTemplate()
-    0r ~/.vim/template/production.php
+    0r ~/.vim/template/production.pl
 endfunction
 
 autocmd BufNewFile *.pl call LoadPerlTemplate()
