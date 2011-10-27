@@ -35,6 +35,17 @@ highlight Search cterm=none ctermbg=blue
 nmap <Esc>[Z <C-w>W
 nmap <Tab> <C-w>w
 "
+" template
+function LoadPHPTemplate()
+    0r ~/.vim/template/production.pl
+endfunction
+function LoadPerlTemplate()
+    0r ~/.vim/template/production.php
+endfunction
+
+autocmd BufNewFile *.pl call LoadPerlTemplate()
+autocmd BufNewFile *.php call LoadPHPTemplate()
+"
 " other
 au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead Makefile set noexpandtab
