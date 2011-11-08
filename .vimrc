@@ -36,6 +36,10 @@ nmap <Esc>[Z <C-w>W
 nmap <Tab> <C-w>w
 "
 " template
+function LoadHTMLTemplate()
+    0r ~/.vim/template/production.html
+    normal Gdd
+endfunction
 function LoadPHPTemplate()
     0r ~/.vim/template/production.php
     normal Gdd
@@ -45,6 +49,7 @@ function LoadPerlTemplate()
     normal Gdd
 endfunction
 
+autocmd BufNewFile *.html call LoadHTMLTemplate()
 autocmd BufNewFile *.pl call LoadPerlTemplate()
 autocmd BufNewFile *.php call LoadPHPTemplate()
 "
