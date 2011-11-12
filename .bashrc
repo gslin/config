@@ -27,8 +27,14 @@ complete -c -o default -o nospace sudo
 export EDITOR="vim"
 export GIT_PAGER="less"
 export LESS="-EfmrSwX"
-export PAGER="most"
+export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
+#
+if [ -x most ]; then
+    export PAGER="most"
+else
+    export PAGER="less"
+fi
 #
 shopt -s checkwinsize
 shopt -s histappend
