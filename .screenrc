@@ -1,4 +1,6 @@
 bindkey ^Aa other
 defscrollback 2000
+#defutf8 on
 escape ^A^A
 vbell off
+#utf8 on
