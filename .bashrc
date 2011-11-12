@@ -39,11 +39,13 @@ fi
 shopt -s checkwinsize
 shopt -s histappend
 #
-if [ "`uname -s`" == "FreeBSD" ]; then
-    alias ls="/bin/ls -aFGg"
+if [ "`uname -s`" == "FreeBSD" -o "`uname -s`" == "Darwin" ]; then
+    alias ls="/bin/ls -aFG"
     alias w="/usr/bin/w -i"
-else
+elif [ "`uname -s`" == "Linux" ]; then
     alias ls="/bin/ls -aF --color=always"
+else
+    alias ls="/bin/ls -aF"
 fi
 #
 if [ -z "$WINDOW" ]; then
