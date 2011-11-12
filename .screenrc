@@ -1,0 +1,4 @@
+bindkey ^Aa other
+defscrollback 2000
+escape ^A^A
+vbell off
