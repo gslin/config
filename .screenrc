@@ -1,6 +1,11 @@
 bindkey ^Aa other
+caption always "%{dk}%{+b K}> %{W}%n %t %{K}<%{W}%=%{+b K}load{%l} %{C}$USER@%{W}%H %{db}%{W}  %0C %A  "
+#defbce "on"
+#defc1 "off"
 defscrollback 2000
 #defutf8 on
 escape ^A^A
+#termcap xterm
+#termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
 vbell off
 #utf8 on
