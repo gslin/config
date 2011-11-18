@@ -27,6 +27,7 @@ alias t="telnet"
 [[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
 [[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
 #
+export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
 export LESS="-EfmrSwX"
