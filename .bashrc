@@ -22,8 +22,8 @@ alias ssh="ssh -4 -C -e none -v"
 alias t="telnet"
 [[ -s "$HOME/.bashrc.alias" ]] && source "$HOME/.bashrc.alias"
 #
-complete -o dirnames -o default -o nospace cd
-complete -c -o default -o nospace sudo
+[[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
+[[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
 #
 export EDITOR="vim"
 export GIT_PAGER="less"
