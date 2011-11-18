@@ -24,9 +24,6 @@ alias ssh="ssh -4 -C -e none -v"
 alias t="telnet"
 [[ -s "$HOME/.bashrc.alias" ]] && source "$HOME/.bashrc.alias"
 #
-[[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
-[[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
-#
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
@@ -62,3 +59,6 @@ fi
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
+#
+[[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
+[[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
