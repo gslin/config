@@ -33,6 +33,9 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 #
+if [ -z "${LANG}" ]; then
+    export LANG="en_US.UTF-8"
+fi
 if [ -x /usr/local/bin/most -o -x /usr/bin/most ]; then
     export PAGER="most"
 else
