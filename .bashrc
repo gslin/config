@@ -63,3 +63,5 @@ fi
 #
 [[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
 [[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
+#
+[[ -s "$HOME/.bashrc.local" ]] && source "$HOME/.bashrc.local"
