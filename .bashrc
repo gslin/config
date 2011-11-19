@@ -23,8 +23,6 @@ alias s="screen"
 alias ssh="ssh -4 -C -e none -v"
 alias t="telnet"
 #
-[[ -s "$HOME/.bashrc.alias" ]] && source "$HOME/.bashrc.alias"
-#
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
