@@ -22,6 +22,7 @@ alias psu="ps -U"
 alias s="screen"
 alias ssh="ssh -4 -C -e none -v"
 alias t="telnet"
+#
 [[ -s "$HOME/.bashrc.alias" ]] && source "$HOME/.bashrc.alias"
 #
 export BLOCKSIZE="k"
