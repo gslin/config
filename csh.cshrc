@@ -12,8 +12,8 @@ alias d "ls -l"
 alias dir "ls -l"
 alias dir/p "ls -l \!* | less"
 alias f "finger"
-alias g "/usr/bin/grep --color --mmap"
-alias l "/usr/bin/last \!* | less"
+alias g "grep --color --mmap"
+alias l "last \!* | less"
 alias ls "ls-F -aFGg"
 alias m "more"
 alias more "less"
@@ -32,9 +32,9 @@ set prompt = "%B%m%b [%/] -%n- "
 #
 set savehist = 5000
 #
-setenv EDITOR "/usr/local/bin/vim"
+setenv EDITOR "vim"
 setenv LESS "-EfmrSwX"
 setenv LSCOLORS "gxfxcxdxbxegedabagacad"
-setenv PAGER "/usr/local/bin/most"
+setenv PAGER "most"
 setenv PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 setenv VISUAL $EDITOR
