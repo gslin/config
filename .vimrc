@@ -27,7 +27,8 @@ syntax on
 "
 " color schema
 set background=dark
-colo wombat256mod
+let g:solarized_termcolors=256
+colo solarized
 highlight Search cterm=none ctermbg=blue
 "
 " keybinding
