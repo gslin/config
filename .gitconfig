@@ -2,7 +2,7 @@
     br = branch
     ci = commit
     co = checkout
-    di = diff
+    di = diff --color-words
     gl = log --decorate --graph --pretty=oneline
     glog = log --decorate --graph
     st = status --short
