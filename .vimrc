@@ -56,6 +56,7 @@ endfunction
 autocmd BufNewFile *.html call LoadHTMLTemplate()
 autocmd BufNewFile *.pl call LoadPerlTemplate()
 autocmd BufNewFile *.php call LoadPHPTemplate()
+autocmd BufNewFile *.sh call LoadShellTemplate()
 "
 " other
 au BufNewFile,BufRead *.psgi setf perl
