@@ -48,6 +48,10 @@ function LoadPerlTemplate()
     0r ~/.vim/template/production.pl
     normal Gdd
 endfunction
+function LoadShellTemplate()
+    0r ~/.vim/template/production.sh
+    normal Gdd
+endfunction
 
 autocmd BufNewFile *.html call LoadHTMLTemplate()
 autocmd BufNewFile *.pl call LoadPerlTemplate()
