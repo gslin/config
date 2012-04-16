@@ -59,8 +59,9 @@ autocmd BufNewFile *.php call LoadPHPTemplate()
 autocmd BufNewFile *.sh call LoadShellTemplate()
 "
 " other
-au BufNewFile,BufRead *.psgi setf perl
+au BufNewFile,BufRead *.mk set noexpandtab
 au BufNewFile,BufRead *.json setf json
+au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 "
