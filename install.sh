@@ -2,6 +2,9 @@
 
 BASEDIR=`dirname $0`
 
+#
+umask 077
+
 # submodule init
 git submodule update --init
 
