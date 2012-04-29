@@ -33,6 +33,7 @@ highlight Search cterm=none ctermbg=blue
 "
 " keybinding
 nmap <Esc>[Z <C-w>W
+nmap <F2> :NERDTreeToggle<CR>
 nmap <Tab> <C-w>w
 "
 " other
