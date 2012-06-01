@@ -19,3 +19,4 @@ cp ${BASEDIR}/.bashrc ~/
 cp ${BASEDIR}/.vimrc ~/
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
+chmod 700 ~/.vim/
