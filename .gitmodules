@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/snipmate.vim"]
 	path = .vim/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule ".vim/bundle/vim-css-color.vim"]
+	path = .vim/bundle/vim-css-color.vim
+	url = https://github.com/ap/vim-css-color.git
