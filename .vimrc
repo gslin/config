@@ -45,5 +45,5 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "
 call pathogen#infect()
 "
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd w
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
