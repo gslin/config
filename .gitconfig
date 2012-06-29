@@ -1,6 +1,6 @@
 [alias]
     br = branch
-    ci = commit
+    ci = commit -v
     co = checkout
     di = diff --color-words
     gl = log --decorate --graph --pretty=oneline
