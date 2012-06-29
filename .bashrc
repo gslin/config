@@ -52,13 +52,13 @@ else
     alias ls="/bin/ls -aF"
 fi
 #
+[[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
+[[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
+#
 if [ -z "$WINDOW" ]; then
     PS1='\[\e[G\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]] '
 else
     PS1='\[\e[G\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]/\[\e[36m\]W$WINDOW\[\e[0m\]] '
 fi
-#
-[[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
-[[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
 #
 [[ -s "$HOME/.bashrc.local" ]] && source "$HOME/.bashrc.local"
