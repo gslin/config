@@ -57,13 +57,13 @@ fi
 [[ -s "/usr/local/share/git-core/contrib/completion/git-completion.bash" ]] && source "/usr/local/share/git-core/contrib/completion/git-completion.bash"
 #
 if [ -z "$WINDOW" ]; then
-    if type __git_ps1; then
+    if type __git_ps1 > /dev/null; then
         PS1='\[\e[G\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]]\[\e[1;30m\]$(__git_ps1)\[\e[m\] '
     else
         PS1='\[\e[G\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]]\[\e[1;30m\] '
     fi
 else
-    if type __git_ps1; then
+    if type __git_ps1 > /dev/null; then
         PS1='\[\e[G\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]/\[\e[36m\]W$WINDOW\[\e[0m\]]\[\e[1;30m\]$(__git_ps1)\[\e[m\] '
     else
         PS1='\[\e[G\e[0m\e[32m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] [\[\e[32m\]\w\[\e[0m\]] [\[\e[36m\]\A\[\e[0m\]/\[\e[36m\]W$WINDOW\[\e[0m\]]\[\e[1;30m\] '
