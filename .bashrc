@@ -34,6 +34,7 @@ export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cp
 function http10()
 {
     echo "$1 $2 HTTP/1.0"
+    echo "Connection: close"
     echo ""
 }
 
@@ -41,6 +42,7 @@ function http11()
 {
     echo "$1 $3 HTTP/1.1"
     echo "Host: $2"
+    echo "Connection: close"
     echo ""
 }
 #
