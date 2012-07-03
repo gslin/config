@@ -31,6 +31,19 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 #
+function http10()
+{
+    echo "GET $1 HTTP/1.0"
+    echo ""
+}
+
+function http11()
+{
+    echo "GET $1 HTTP/1.1"
+    echo "Host: $2"
+    echo ""
+}
+#
 if [ -z "${LANG}" ]; then
     export LANG="en_US.UTF-8"
 fi
