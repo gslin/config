@@ -33,13 +33,13 @@ export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cp
 #
 function http10()
 {
-    echo "GET $1 HTTP/1.0"
+    echo "$1 $2 HTTP/1.0"
     echo ""
 }
 
 function http11()
 {
-    echo "GET $1 HTTP/1.1"
+    echo "$1 $3 HTTP/1.1"
     echo "Host: $2"
     echo ""
 }
