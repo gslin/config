@@ -13,6 +13,3 @@
 [submodule ".vim/bundle/vim-powerline.git"]
 	path = .vim/bundle/vim-powerline.git
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule ".vim/bundle/PIV"]
-	path = .vim/bundle/PIV
-	url = https://github.com/spf13/PIV.git
