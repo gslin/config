@@ -71,7 +71,7 @@ else
 fi
 #
 [[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
-[[ -s "/usr/local/etc/bash_completion" ]] && source "/usr/local/etc/bash_completion"
+[[ -s "/usr/local/share/bash-completion" ]] && source "/usr/local/share/bash-completion"
 [[ -s "/usr/local/share/git-core/contrib/completion/git-completion.bash" ]] && source "/usr/local/share/git-core/contrib/completion/git-completion.bash"
 #
 if [ -z "$WINDOW" ]; then
