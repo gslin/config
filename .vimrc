@@ -26,7 +26,11 @@ set wildmenu
 syntax on
 "
 " color schema
-set background=dark
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
 let g:solarized_termcolors=256
 colo solarized
 highlight Search cterm=none ctermbg=blue
