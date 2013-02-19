@@ -15,6 +15,9 @@ cp ${BASEDIR}/.inputrc ~/
 cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.bashrc ~/
 
+#
+cp ${BASEDIR}/.tmux.conf ~/
+
 # vim
 cp ${BASEDIR}/.vimrc ~/
 mkdir -p ~/.vim/
