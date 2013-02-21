@@ -41,8 +41,9 @@ nmap <F2> :NERDTreeToggle<CR>
 nmap <Tab> <C-w>w
 "
 " other
-au BufNewFile,BufRead *.mk set noexpandtab
+au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.json setf json
+au BufNewFile,BufRead *.mk set noexpandtab
 au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
