@@ -32,7 +32,7 @@ else
     set background=dark
 endif
 let g:solarized_termcolors=256
-colo Tomorrow-Night
+colo solarized
 highlight Search cterm=none ctermbg=blue
 "
 " keybinding
