@@ -37,7 +37,6 @@ highlight Search cterm=none ctermbg=blue
 "
 " keybinding
 nmap <Esc>[Z <C-w>W
-nmap <F2> :NERDTreeToggle<CR>
 nmap <Tab> <C-w>w
 "
 " other
@@ -49,6 +48,3 @@ au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 "
 call pathogen#infect()
-"
-autocmd vimenter * NERDTree | wincmd w
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
