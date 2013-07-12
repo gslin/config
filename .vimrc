@@ -1,3 +1,4 @@
+set backspace=indent,eol,start
 set cindent
 set cursorline
 set encoding=utf8
