@@ -47,6 +47,7 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 "
 Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "airblade/vim-gitgutter"
 Bundle "bling/vim-airline"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
