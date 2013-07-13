@@ -33,6 +33,7 @@ if has('gui_running')
 else
     set background=dark
 endif
+let g:airline_powerline_fonts = 1
 let g:solarized_termcolors=256
 colo solarized
 highlight Search cterm=none ctermbg=blue
