@@ -46,6 +46,8 @@ call vundle#rc()
 "
 Bundle "gmarik/vundle"
 "
+Bundle "bling/vim-airline"
+"
 filetype plugin indent on
 "
 " other
