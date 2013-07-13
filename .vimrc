@@ -40,6 +40,14 @@ highlight Search cterm=none ctermbg=blue
 nmap <Esc>[Z <C-w>W
 nmap <Tab> <C-w>w
 "
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+"
+Bundle "gmarik/vundle"
+"
+filetype plugin indent on
+"
 " other
 au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.json setf json
