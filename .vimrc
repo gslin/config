@@ -50,6 +50,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "bling/vim-airline"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+Bundle "kien/ctrlp.vim"
 Bundle "tomtom/tlib_vim"
 "
 filetype plugin indent on
