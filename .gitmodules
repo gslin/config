@@ -1,15 +1,9 @@
 [submodule ".vim/bundle/git-vim"]
 	path = .vim/bundle/git-vim
 	url = https://github.com/motemen/git-vim
-[submodule ".vim/bundle/snipmate.vim"]
-	path = .vim/bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule ".vim/bundle/vim-css-color.vim"]
 	path = .vim/bundle/vim-css-color.vim
 	url = https://github.com/ap/vim-css-color.git
-[submodule ".vim/bundle/vim-powerline.git"]
-	path = .vim/bundle/vim-powerline.git
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
@@ -19,3 +13,6 @@
 [submodule ".vim/bundle/vim-snipmate"]
 	path = .vim/bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
