@@ -15,6 +15,7 @@ set list
 set listchars=tab:▷⋅,trail:·
 set nobomb
 set nocompatible
+set nofoldenable
 set number
 set ruler
 set scrolloff=3
