@@ -54,6 +54,7 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "kien/ctrlp.vim"
 Bundle "motemen/git-vim"
+Bundle "nathanaelkane/vim-indent-guides"
 Bundle "tomtom/tlib_vim"
 "
 filetype plugin indent on
