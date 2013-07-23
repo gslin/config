@@ -19,7 +19,6 @@ cp ${BASEDIR}/.bashrc ~/
 cp ${BASEDIR}/.tmux.conf ~/
 
 # vim
-cp ${BASEDIR}/.vimrc ~/
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
 chmod 700 ~/.vim/
