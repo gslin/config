@@ -29,11 +29,7 @@ set wildmenu
 syntax on
 "
 " color schema
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+set background=dark
 let g:airline_powerline_fonts = 1
 let g:solarized_termcolors=256
 colo solarized
