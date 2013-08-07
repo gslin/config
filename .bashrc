@@ -29,7 +29,7 @@ export EDITOR="vim"
 export GIT_PAGER="less"
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-export PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 #
 function http10()
