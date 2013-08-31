@@ -60,6 +60,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "tpope/vim-fugitive"
 "
 filetype plugin indent on
+let g:SuperTabDefaultCompletionType = "context"
 "
 " other
 au BufNewFile,BufRead *.go set filetype=go
