@@ -38,6 +38,7 @@ highlight Search cterm=none ctermbg=blue
 " keybinding
 nmap <Esc>[Z <C-w>W
 nmap <Tab> <C-w>w
+nmap <F8> :TagbarToggle<CR>
 "
 filetype off
 set rtp+=~/.vim/bundle/vundle/
