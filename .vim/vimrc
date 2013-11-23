@@ -5,7 +5,7 @@ set cursorline
 set encoding=utf8
 set expandtab
 set fileencoding=utf8
-set fileencodings=ucs-bom,utf8,cp950,latin1
+set fileencodings=ucs-bom,utf8,cp950,gbk,latin1
 set guifont=Inconsolata:h12
 set hlsearch
 set ignorecase
