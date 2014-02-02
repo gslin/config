@@ -5,7 +5,7 @@
     di = diff --color-words
     gl = log --decorate --graph --pretty=oneline
     glog = log --decorate --graph
-    st = status --short
+    st = status -bs
 [color]
     ui = auto
 [core]
