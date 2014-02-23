@@ -43,6 +43,7 @@ fi
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
+export HISTFILE="$HOME/.history"
 export HISTSIZE=2000
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
