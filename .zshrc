@@ -30,6 +30,13 @@ else
 fi
 #
 bindkey -e
+typeset -A key
+key[Delete]=${terminfo[kdch1]}
+key[End]=${terminfo[kend]}
+key[Home]=${terminfo[khome]}
+key[Insert]=${terminfo[kich1]}
+key[PageDown]=${terminfo[knp]}
+key[PageUp]=${terminfo[kpp]}
 #
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
