@@ -11,7 +11,6 @@ alias "f=finger"
 alias "g=grep --color=auto"
 alias "l=last"
 alias "lo=logout"
-alias "ls=ls -aF --color=always"
 alias "m=more"
 alias "more=most"
 alias "psa=ps aux"
@@ -22,6 +21,14 @@ alias "s=screen"
 alias "smic=sudo make install clean"
 alias "ssh=ssh -4 -C -e none -v"
 alias "t=telnet"
+#
+if [ "`uname -s`" == "FreeBSD" -o "`uname -s`" == "Darwin" ]; then
+    alias "ls=/bin/ls -aFG"
+elif [ "`uname -s`" == "Linux" ]; then
+    alias "ls=/bin/ls -aF --color=always"
+else
+    alias "ls=/bin/ls -aF"
+fi
 #
 export BLOCKSIZE="k"
 export EDITOR="vim"
