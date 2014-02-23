@@ -14,6 +14,7 @@ cp ${BASEDIR}/.inputrc ~/
 #
 cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.bashrc ~/
+cp ${BASEDIR}/.zshrc ~/
 
 #
 cp ${BASEDIR}/.tmux.conf ~/
