@@ -22,6 +22,12 @@ alias "smic=sudo make install clean"
 alias "ssh=ssh -4 -C -e none -v"
 alias "t=telnet"
 #
+if [[ -x /usr/local/bin/most || -x /usr/bin/most ]]; then
+    export PAGER="most"
+else
+    export PAGER="less"
+fi
+#
 if [ "`uname -s`" == "FreeBSD" -o "`uname -s`" == "Darwin" ]; then
     alias "ls=/bin/ls -aFG"
 elif [ "`uname -s`" == "Linux" ]; then
