@@ -28,11 +28,11 @@ else
     export PAGER="less"
 fi
 #
-if [ "`uname -s`" == "FreeBSD" -o "`uname -s`" == "Darwin" ]; then
+if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
     alias "tmux=TERM=xterm-256color /usr/local/bin/tmux"
     alias "w=/usr/bin/w -i"
-elif [ "`uname -s`" == "Linux" ]; then
+elif [[ "`uname -s`" = "Linux" ]]; then
     alias "ls=/bin/ls -aF --color=always"
     alias "tmux=TERM=screen-256color /usr/bin/tmux"
 else
