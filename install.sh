@@ -12,8 +12,8 @@ git submodule update --init
 cp ${BASEDIR}/.inputrc ~/
 
 #
-cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.bashrc ~/
+cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.zshrc ~/
 
 #
