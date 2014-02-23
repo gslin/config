@@ -29,6 +29,8 @@ else
     export PAGER="less"
 fi
 #
+bindkey -e
+#
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
     alias "tmux=TERM=xterm-256color /usr/local/bin/tmux"
