@@ -29,6 +29,9 @@ else
     export PAGER="less"
 fi
 #
+autoload -Uz compinit
+compinit
+#
 bindkey -e
 typeset -A key
 key[Delete]=${terminfo[kdch1]}
