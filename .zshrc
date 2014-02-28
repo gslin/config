@@ -70,6 +70,7 @@ export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cp
 export SAVEHIST=2000
 #
 setopt hist_ignore_all_dups
+setopt menu_complete
 setopt prompt_subst
 #
 if [[ -z "$WINDOW" ]]; then
