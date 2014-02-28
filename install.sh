@@ -23,3 +23,4 @@ cp ${BASEDIR}/.tmux.conf ~/
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
 chmod 700 ~/.vim/
+vim +BundleClean +BundleInstall +q +q
