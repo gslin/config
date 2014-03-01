@@ -50,6 +50,7 @@ Bundle "airblade/vim-gitgutter"
 Bundle "bling/vim-airline"
 Bundle "bonsaiben/bootstrap-snippets"
 Bundle "derekwyatt/vim-scala"
+Bundle "elzr/vim-json"
 Bundle "garbas/vim-snipmate"
 Bundle "gregsexton/gitv"
 Bundle "honza/vim-snippets"
@@ -66,7 +67,6 @@ let g:SuperTabDefaultCompletionType = "context"
 "
 " other
 au BufNewFile,BufRead *.go set filetype=go
-au BufNewFile,BufRead *.json setf json
 au BufNewFile,BufRead *.mk set noexpandtab
 au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead Makefile set noexpandtab
