@@ -64,6 +64,7 @@ Bundle "tpope/vim-fugitive"
 "
 filetype plugin indent on
 let g:SuperTabDefaultCompletionType = "context"
+let g:vim_json_syntax_conceal = 0
 "
 " other
 au BufNewFile,BufRead *.go set filetype=go
