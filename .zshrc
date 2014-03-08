@@ -47,6 +47,9 @@ key[PageUp]=${terminfo[kpp]}
 [[ -n "${key[PageDown]}" ]] && bindkey "${key[PageDown]}" end-of-buffer-or-history
 [[ -n "${key[PageUp]}" ]] && bindkey "${key[PageUp]}" beginning-of-buffer-or-history
 #
+bindkey "[A" history-search-backward
+bindkey "[B" history-search-forward
+#
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
     alias "tmux=TERM=xterm-256color /usr/local/bin/tmux"
