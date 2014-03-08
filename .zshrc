@@ -69,6 +69,7 @@ export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 export SAVEHIST=2000
 #
+setopt append_history
 setopt hist_ignore_all_dups
 setopt menu_complete
 setopt prompt_subst
