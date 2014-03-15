@@ -32,6 +32,21 @@ fi
 autoload -Uz compinit
 compinit
 #
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*' formats "%b"
+precmd() {
+    vcs_info
+    if [[ -z "$WINDOW" ]]; then
+        PS1=$'%{\e[G\e[m\e[32m%}%n%{\e[m%}@%{\e[36m%}%m%{\e[m%} [%{\e[32m%}%~%{\e[m%}] [%{\e[36m%}%D{%R}%{\e[m%}] '
+    else
+        PS1=$'%{\e[G\e[m\e[32m%}%n%{\e[m%}@%{\e[36m%}%m%{\e[m%} [%{\e[32m%}%~%{\e[m%}] [%{\e[36m%}%D{%R}%{\e[m%}/%{\e[36m%}W${WINDOW}%{\e[m%}]%{\e[0m%} '
+    fi
+    if [[ ! -z "$vcs_info_msg_0_" ]]; then
+        PS1+=$'%{\e[1;30m%}(${vcs_info_msg_0_})%{\e[m%} '
+    fi
+}
+#
 bindkey -e
 typeset -A key
 key[Delete]=${terminfo[kdch1]}
@@ -76,12 +91,6 @@ setopt append_history
 setopt hist_ignore_all_dups
 setopt menu_complete
 setopt prompt_subst
-#
-if [[ -z "$WINDOW" ]]; then
-    PS1=$'%{\e[G\e[m\e[32m%}%n%{\e[m%}@%{\e[36m%}%m%{\e[m%} [%{\e[32m%}%~%{\e[m%}] [%{\e[36m%}%D{%R}%{\e[m%}] '
-else
-    PS1=$'%{\e[G\e[m\e[32m%}%n%{\e[m%}@%{\e[36m%}%m%{\e[m%} [%{\e[32m%}%~%{\e[m%}] [%{\e[36m%}%D{%R}%{\e[m%}/%{\e[36m%}W${WINDOW}%{\e[m%}]%{\e[0m%} '
-fi
 #
 zstyle ':completion:*' menu select
 #
