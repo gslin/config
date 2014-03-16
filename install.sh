@@ -19,6 +19,12 @@ cp ${BASEDIR}/.zshrc ~/
 #
 cp ${BASEDIR}/.tmux.conf ~/
 
+#
+cp ${BASEDIR}/.gitconfig ~/
+if [ ! -e ~/.gitconfig.local ]; then
+    cp ${BASEDIR}/.gitconfig.local ~/
+fi
+
 # vim
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
