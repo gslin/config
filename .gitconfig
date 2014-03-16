@@ -16,6 +16,6 @@
     tool = vimdiff
 [push]
     default = matching
-[user]
-    email = darkkiller@gmail.com
-    name = Gea-Suan Lin
+#
+[include]
+    path = ~/.gitconfig.local
