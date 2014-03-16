@@ -7,6 +7,7 @@
     gl = log --decorate --graph --pretty=oneline
     glog = log --decorate --graph
     st = status -bs
+    up = "!git remote update -p; git merge --ff-only @{u}"
 [color]
     ui = auto
 [core]
