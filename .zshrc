@@ -23,6 +23,10 @@ alias "smic=sudo make install clean"
 alias "ssh=ssh -4 -C -e none -v"
 alias "t=telnet"
 #
+if [[ -x /usr/bin/xdg-open ]]; then
+    alias "o=xdg-open"
+fi
+#
 if [[ -x /usr/local/bin/most || -x /usr/bin/most ]]; then
     export PAGER="most"
 else
