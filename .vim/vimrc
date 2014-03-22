@@ -36,6 +36,7 @@ set background=dark
 highlight Search cterm=none ctermbg=blue
 "
 " mapping
+map q: :q
 nmap <Esc>[Z <C-w>W
 nmap <F8> :TagbarToggle<CR>
 nmap <Tab> <C-w>w
