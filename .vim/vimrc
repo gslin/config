@@ -46,8 +46,6 @@ vmap v <Plug>(expand_region_expand)
 vnoremap <silent> p p`]
 vnoremap <silent> y y`]
 "
-let mapleader="\<Space>"
-"
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -74,6 +72,7 @@ Bundle "tpope/vim-fugitive"
 filetype plugin indent on
 let g:SuperTabDefaultCompletionType = "context"
 let g:vim_json_syntax_conceal = 0
+let mapleader="\<Space>"
 "
 " other
 au BufNewFile,BufRead *.go set filetype=go
