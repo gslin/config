@@ -46,6 +46,8 @@ vmap v <Plug>(expand_region_expand)
 vnoremap <silent> p p`]
 vnoremap <silent> y y`]
 "
+let mapleader="\<Space>"
+"
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
