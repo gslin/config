@@ -39,6 +39,8 @@ highlight Search cterm=none ctermbg=blue
 nmap <Esc>[Z <C-w>W
 nmap <F8> :TagbarToggle<CR>
 nmap <Tab> <C-w>w
+vmap <C-v> <Plug>(expand_region_shrink)
+vmap v <Plug>(expand_region_expand)
 "
 filetype off
 set rtp+=~/.vim/bundle/vundle/
