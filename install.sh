@@ -17,6 +17,9 @@ cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.zshrc ~/
 
 #
+if [ ! -e ~/.screenrc ]; then
+    cp ${BASEDIR}/.screenrc ~/
+fi
 cp ${BASEDIR}/.tmux.conf ~/
 
 #
