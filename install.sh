@@ -28,6 +28,9 @@ if [ ! -e ~/.gitconfig.local ]; then
     cp ${BASEDIR}/.gitconfig.local ~/
 fi
 
+#
+cp ${BASEDIR}/.wgetrc ~/
+
 # vim
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
