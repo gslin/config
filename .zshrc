@@ -66,8 +66,8 @@ key[PageUp]=${terminfo[kpp]}
 [[ -n "${key[PageDown]}" ]] && bindkey "${key[PageDown]}" end-of-buffer-or-history
 [[ -n "${key[PageUp]}" ]] && bindkey "${key[PageUp]}" beginning-of-buffer-or-history
 #
-bindkey "[A" history-search-backward
-bindkey "[B" history-search-forward
+bindkey "[A" history-beginning-search-backward
+bindkey "[B" history-beginning-search-forward
 #
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
