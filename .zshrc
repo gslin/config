@@ -40,12 +40,17 @@ autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git*' formats "%b"
 precmd() {
-    vcs_info
+    if [[ ! -z "$TMUX" ]]; then
+        WINDOW=$(tmux display -p | awk '{print $2}' | awk -F: '{print $1}')
+    fi
+
     if [[ -z "$WINDOW" ]]; then
         PS1=$'%{\e[m\e[G\e[K\e[32m%}%n%{\e[m%}@%{\e[36m%}%m%{\e[m%} [%{\e[32m%}%~%{\e[m%}] [%{\e[36m%}%D{%R}%{\e[m%}] '
     else
         PS1=$'%{\e[m\e[G\e[K\e[32m%}%n%{\e[m%}@%{\e[36m%}%m%{\e[m%} [%{\e[32m%}%~%{\e[m%}] [%{\e[36m%}%D{%R}%{\e[m%}/%{\e[36m%}W${WINDOW}%{\e[m%}]%{\e[0m%} '
     fi
+
+    vcs_info
     if [[ ! -z "$vcs_info_msg_0_" ]]; then
         PS1+=$'%{\e[1;30m%}(${vcs_info_msg_0_})%{\e[m%} '
     fi
