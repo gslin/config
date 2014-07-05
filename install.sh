@@ -15,6 +15,12 @@ cp ${BASEDIR}/.inputrc ~/
 cp ${BASEDIR}/.bashrc ~/
 cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.zshrc ~/
+if [ ! -e ~/.bashrc ]; then
+    cp ${BASEDIR}/.bashrc.local ~/
+fi
+if [ ! -e ~/.zshrc.local ]; then
+    cp ${BASEDIR}/.zshrc.local ~/
+fi
 
 #
 if [ ! -e ~/.screenrc ]; then
