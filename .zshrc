@@ -95,7 +95,7 @@ export HISTFILE="$HOME/.history"
 export HISTSIZE=2000
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 export SAVEHIST=2000
 #
 setopt append_history
