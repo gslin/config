@@ -80,6 +80,7 @@ let mapleader="\<Space>"
 "
 " other
 au BufNewFile,BufRead *.go set filetype=go
+au BufNewFile,BufRead *.sls set filetype=yaml
 au BufNewFile,BufRead *.mk set noexpandtab
 au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead Makefile set noexpandtab
