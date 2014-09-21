@@ -35,6 +35,9 @@ if [ ! -e ~/.gitconfig.local ]; then
 fi
 
 #
+cp ${BASEDIR}/.gdbinit ~/
+
+#
 cp ${BASEDIR}/.wgetrc ~/
 
 # vim
