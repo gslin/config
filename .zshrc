@@ -76,8 +76,8 @@ key[Up]=${terminfo[kcuu1]}
 autoload -Uz history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "${Key[Up]}" history-beginning-search-backward-end
-bindkey "${Key[Down]}" history-beginning-search-forward-end
+bindkey "${key[Up]}" history-beginning-search-backward-end
+bindkey "${key[Down]}" history-beginning-search-forward-end
 #
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
