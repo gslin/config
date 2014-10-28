@@ -59,11 +59,13 @@ precmd() {
 bindkey -e
 typeset -A key
 key[Delete]=${terminfo[kdch1]}
+key[Down]=${terminfo[kcud1]}
 key[End]=${terminfo[kend]}
 key[Home]=${terminfo[khome]}
 key[Insert]=${terminfo[kich1]}
 key[PageDown]=${terminfo[knp]}
 key[PageUp]=${terminfo[kpp]}
+key[Up]=${terminfo[kcuu1]}
 [[ -n "${key[Delete]}" ]] && bindkey "${key[Delete]}" delete-char
 [[ -n "${key[End]}" ]] && bindkey "${key[End]}" end-of-line
 [[ -n "${key[Home]}" ]] && bindkey "${key[Home]}" beginning-of-line
@@ -74,8 +76,8 @@ key[PageUp]=${terminfo[kpp]}
 autoload -Uz history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "[A" history-beginning-search-backward-end
-bindkey "[B" history-beginning-search-forward-end
+bindkey "${Key[Up]}" history-beginning-search-backward-end
+bindkey "${Key[Down]}" history-beginning-search-forward-end
 #
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
