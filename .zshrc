@@ -88,6 +88,10 @@ else
     alias "ls=/bin/ls -aF"
 fi
 #
+if [[ "$COLORTERM" == "gnome-terminal" ]]; then
+    export TERM=xterm-256color
+fi
+#
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
