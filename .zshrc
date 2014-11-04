@@ -33,6 +33,11 @@ else
     export PAGER="less"
 fi
 #
+# Hack for gnome-terminal
+if [[ "$COLORTERM" == "gnome-terminal" ]]; then
+    export TERM=xterm-256color
+fi
+#
 autoload -Uz compinit
 compinit
 #
@@ -86,11 +91,6 @@ elif [[ "`uname -s`" = "Linux" ]]; then
     alias "ls=/bin/ls -aF --color=always"
 else
     alias "ls=/bin/ls -aF"
-fi
-#
-# Hack for gnome-terminal
-if [[ "$COLORTERM" == "gnome-terminal" ]]; then
-    export TERM=xterm-256color
 fi
 #
 export BLOCKSIZE="k"

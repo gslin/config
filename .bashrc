@@ -48,6 +48,11 @@ function http11()
     echo ""
 }
 #
+# Hack for gnome-terminal
+if [ "$COLORTERM" == "gnome-terminal" ]; then
+    export TERM=xterm-256color
+fi
+#
 if [ -z "${LANG}" ]; then
     export LANG="en_US.UTF-8"
 fi
@@ -67,11 +72,6 @@ elif [ "`uname -s`" == "Linux" ]; then
     alias ls="/bin/ls -aF --color=always"
 else
     alias ls="/bin/ls -aF"
-fi
-#
-# Hack for gnome-terminal
-if [ "$COLORTERM" == "gnome-terminal" ]; then
-    export TERM=xterm-256color
 fi
 #
 [[ -s "/etc/bash_completion" ]] && source "/etc/bash_completion"
