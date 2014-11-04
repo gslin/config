@@ -27,12 +27,6 @@ if [[ -x /usr/bin/xdg-open ]]; then
     alias "o=xdg-open"
 fi
 #
-if [[ -x /usr/local/bin/most || -x /usr/bin/most ]]; then
-    export PAGER="most"
-else
-    export PAGER="less"
-fi
-#
 # Hack for gnome-terminal
 if [[ "$COLORTERM" == "gnome-terminal" ]]; then
     export TERM=xterm-256color
@@ -102,6 +96,12 @@ export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 export SAVEHIST=2000
+#
+if [[ -x /usr/local/bin/most || -x /usr/bin/most ]]; then
+    export PAGER="most"
+else
+    export PAGER="less"
+fi
 #
 setopt append_history
 setopt hist_ignore_all_dups
