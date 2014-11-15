@@ -31,8 +31,7 @@ syntax on
 "
 " color schema
 let g:airline_powerline_fonts = 1
-let g:solarized_termcolors = 256
-colo solarized
+colo Tomorrow-Night-Eighties
 set background=dark
 highlight Search cterm=none ctermbg=blue
 "
