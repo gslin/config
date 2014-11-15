@@ -31,8 +31,8 @@ syntax on
 "
 " color schema
 let g:airline_powerline_fonts = 1
-colo Tomorrow-Night-Eighties
 set background=dark
+colo Tomorrow-Night-Eighties
 highlight Search cterm=none ctermbg=blue
 "
 " mapping
