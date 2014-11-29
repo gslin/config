@@ -8,8 +8,7 @@ install:
 	./install.sh
 
 pull:
-	${GIT} pull -v origin master
-	${GIT} submodule update --init --recursive
+	${GIT} pull -v origin master --recurse-submodules=yes
 
 push: pull
 	${GIT} push origin master
