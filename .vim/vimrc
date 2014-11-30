@@ -35,6 +35,10 @@ set background=dark
 colo Tomorrow-Night-Eighties
 highlight Search cterm=none ctermbg=blue
 "
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup = 1
+hi IndentGuidesEven ctermbg=8
+"
 " mapping
 map q: :q
 nmap <Esc>[Z <C-w>W
