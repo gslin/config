@@ -38,6 +38,7 @@ highlight Search cterm=none ctermbg=blue
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 1
 hi IndentGuidesEven ctermbg=8
+hi IndentGuidesOdd ctermbg=236
 "
 " mapping
 map q: :q
