@@ -49,7 +49,7 @@ function http11()
 }
 #
 # Hack for gnome-terminal
-if [ "$COLORTERM" == "gnome-terminal" ]; then
+if [ "$COLORTERM" == "gnome-terminal" -a -z "$TMUX" -a -z "$SCREEN" ]; then
     export TERM=xterm-256color
 fi
 #

@@ -28,7 +28,7 @@ if [[ -x /usr/bin/xdg-open ]]; then
 fi
 #
 # Hack for gnome-terminal
-if [[ "$COLORTERM" == "gnome-terminal" ]]; then
+if [[ "$COLORTERM" == "gnome-terminal" && -z "$TMUX" && -z "$WINDOW" ]]; then
     export TERM=xterm-256color
 fi
 #
