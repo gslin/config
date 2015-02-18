@@ -57,7 +57,6 @@ call vundle#rc()
 "
 Bundle "gmarik/vundle"
 "
-Bundle "airblade/vim-gitgutter"
 Bundle "bling/vim-airline"
 Bundle "bonsaiben/bootstrap-snippets"
 Bundle "derekwyatt/vim-scala"
