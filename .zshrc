@@ -1,5 +1,5 @@
 #
-umask 077
+umask 022
 cd "$HOME"
 #
 alias "SYNC=sync;sync;sync"
