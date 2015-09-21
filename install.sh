@@ -40,6 +40,9 @@ cp ${BASEDIR}/.gdbinit ~/
 #
 cp ${BASEDIR}/.wgetrc ~/
 
+#
+cp ${BASEDIR}/.sqliterc ~/
+
 # vim
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
