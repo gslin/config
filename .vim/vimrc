@@ -32,7 +32,7 @@ syntax on
 " color schema
 let g:airline_powerline_fonts = 1
 set background=dark
-colo Tomorrow-Night-Eighties
+colo desert256
 highlight Search cterm=none ctermbg=blue
 "
 let g:DisableAutoPHPFolding = 1
