@@ -43,6 +43,9 @@ cp ${BASEDIR}/.wgetrc ~/
 #
 cp ${BASEDIR}/.sqliterc ~/
 
+#
+cp ${BASEDIR}/.psqlrc ~/
+
 # vim
 mkdir -p ~/.vim/
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
