@@ -14,6 +14,8 @@
     preloadindex = yes
 [merge]
     tool = vimdiff
+[pull]
+    rebase = true
 [push]
     default = matching
 #
