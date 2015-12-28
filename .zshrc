@@ -58,7 +58,7 @@ precmd() {
     fi
 }
 #
-bindkey -e
+bindkey -v
 typeset -A key
 key[Delete]=${terminfo[kdch1]}
 key[Down]=${terminfo[kcud1]}
