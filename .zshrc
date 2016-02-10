@@ -23,7 +23,7 @@ alias "psr=psu root"
 alias "psu=ps -U"
 alias "s=screen"
 alias "smic=sudo make install clean"
-alias "ssh=ssh -4 -C -e none -v"
+alias "ssh=ssh -C -e none -v"
 alias "t=telnet"
 #
 if [[ -x /usr/bin/xdg-open ]]; then
