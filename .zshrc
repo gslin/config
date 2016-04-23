@@ -78,7 +78,7 @@ if [[ -f /etc/lsb-release ]]; then
         key[Down]="[B"
         key[Up]="[A"
     fi
-elif [[ "`sysctl kern.ostype 2>&1`" == "FreeBSD" ]]; then
+elif [[ "`uname -o`" == "FreeBSD" ]]; then
     key[Down]="[B"
     key[Up]="[A"
 fi
