@@ -32,6 +32,7 @@ alias t="telnet"
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
+export HOMEBREW_NO_ANALYTICS=1
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
