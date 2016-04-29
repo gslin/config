@@ -37,6 +37,7 @@ export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
+export QUILT_PATCHES="debian/patches"
 #
 function http10()
 {
