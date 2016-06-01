@@ -32,6 +32,7 @@ alias t="telnet"
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"
+export HISTTIMEFORMAT="%y/%m/%d %T "
 export HOMEBREW_NO_ANALYTICS=1
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
