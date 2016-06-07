@@ -96,7 +96,12 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "${key[Up]}" history-beginning-search-backward-end
 bindkey "${key[Down]}" history-beginning-search-forward-end
 #
-bindkey '^w' vi-backward-kill-word
+my-backward-delete-word() {
+    local WORDCHARS=${WORDCHARS/\//}
+    zle backward-delete-word
+}
+zle -N my-backward-delete-word
+bindkey '^w' my-backward-delete-word
 #
 if [[ "`uname -s`" == "FreeBSD" || "`uname -s`" == "Darwin" ]]; then
     alias "ls=/bin/ls -aFG"
