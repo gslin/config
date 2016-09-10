@@ -29,6 +29,10 @@ alias smic="sudo env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 alias ssh="ssh -C -e none -v"
 alias t="telnet"
 #
+function db.warmup() {
+    pt-find --charset=utf8 --print -h $1 | xargs -t -P8 -I% -n1 sh -c "echo 'SELECT COUNT(*) FROM %;' | mysql -h $1 > /dev/null"
+}
+#
 export BLOCKSIZE="k"
 export EDITOR="vim"
 export GIT_PAGER="less"

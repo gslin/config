@@ -27,6 +27,10 @@ alias "smic=sudo make install clean"
 alias "ssh=ssh -C -e none -v"
 alias "t=telnet"
 #
+db.warmup() {
+    pt-find --charset=utf8 --print -h $1 | xargs -t -P8 -I% -n1 sh -c "echo 'SELECT COUNT(*) FROM %;' | mysql -h $1 > /dev/null"
+}
+#
 if [[ -x /usr/bin/xdg-open ]]; then
     alias "o=xdg-open"
 fi
