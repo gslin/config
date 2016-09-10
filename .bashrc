@@ -40,21 +40,6 @@ export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
 export QUILT_PATCHES="debian/patches"
 #
-function http10()
-{
-    echo "$1 $2 HTTP/1.0"
-    echo "Connection: close"
-    echo ""
-}
-
-function http11()
-{
-    echo "$1 $3 HTTP/1.1"
-    echo "Host: $2"
-    echo "Connection: close"
-    echo ""
-}
-#
 # Hack for gnome-terminal
 if [ "$COLORTERM" == "gnome-terminal" -a -z "$TMUX" -a -z "$SCREEN" ]; then
     export TERM=xterm-256color
