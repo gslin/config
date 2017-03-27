@@ -126,7 +126,7 @@ export HISTSIZE=2000
 export HOMEBREW_NO_ANALYTICS=1
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-export PATH="$HOME/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.config/composer/vendor/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 export QUILT_PATCHES="debian/patches"
 export SAVEHIST=2000
 #
