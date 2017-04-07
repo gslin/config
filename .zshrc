@@ -84,7 +84,7 @@ if [[ -f /etc/lsb-release ]]; then
         key[Down]="[B"
         key[Up]="[A"
     fi
-elif [[ "`uname -o`" == "FreeBSD" ]]; then
+elif [[ "`uname -s`" == "FreeBSD" ]]; then
     key[Down]="[B"
     key[Up]="[A"
 fi
