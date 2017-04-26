@@ -81,6 +81,7 @@ Bundle "spf13/PIV"
 Bundle "terryma/vim-expand-region"
 Bundle "tomtom/tlib_vim"
 Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-surround"
 "
 filetype plugin indent on
 let g:ctrlp_use_caching = 0
