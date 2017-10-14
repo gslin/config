@@ -15,7 +15,7 @@ cp ${BASEDIR}/.inputrc ~/
 cp ${BASEDIR}/.bashrc ~/
 cp ${BASEDIR}/.profile ~/
 cp ${BASEDIR}/.zshrc ~/
-if [ ! -e ~/.bashrc ]; then
+if [ ! -e ~/.bashrc.local ]; then
     cp ${BASEDIR}/.bashrc.local ~/
 fi
 if [ ! -e ~/.zshrc.local ]; then
