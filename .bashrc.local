@@ -12,5 +12,7 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init -)"
 fi
 #
+export N_PREFIX="$HOME"
+#
 # Put rvm at last position.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
