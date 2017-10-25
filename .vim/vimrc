@@ -17,8 +17,6 @@ set listchars=tab:▷⋅,trail:·
 set nobomb
 set nocompatible
 set nofoldenable
-set number
-set relativenumber
 set ruler
 set scrolloff=3
 set secure
