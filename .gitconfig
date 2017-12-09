@@ -12,6 +12,8 @@
     ui = auto
 [core]
     preloadindex = yes
+[diff]
+    algorithm = histogram
 [merge]
     tool = vimdiff
 [pull]
