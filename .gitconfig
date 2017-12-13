@@ -13,7 +13,7 @@
 [core]
     preloadindex = yes
 [diff]
-    algorithm = histogram
+    algorithm = patience
 [merge]
     tool = vimdiff
 [pull]
