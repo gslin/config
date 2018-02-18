@@ -14,5 +14,7 @@ fi
 #
 export N_PREFIX="$HOME"
 #
-# Put rvm at last position.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+if [ -d "${HOME}/.rbenv" ]; then
+    export PATH="${HOME}/.rbenv/bin:${PATH}"
+    eval "$(rbenv init -)"
+fi
