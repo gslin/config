@@ -14,7 +14,7 @@ alias docker.cleanps="docker ps --all | grep Exited | awk '{print \$1}' | xargs 
 alias f="finger"
 alias g="grep --color=auto"
 alias gph="git push -v --follow-tags"
-alias gpl="git pull -v --rebase --recurse-submodules=yes"
+alias gpl="git pull -v --rebase --recurse-submodules"
 alias l="last"
 alias lo="logout"
 alias m="more"
