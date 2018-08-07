@@ -13,7 +13,8 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init - --no-rehash)"
 fi
 #
-export N_PREFIX="$HOME"
+export N_PREFIX="$HOME/n"
+export PATH="${HOME}/n/bin:${PATH}"
 #
 if [ -d "${HOME}/.rbenv" ]; then
     export PATH="${HOME}/.rbenv/bin:${PATH}"
