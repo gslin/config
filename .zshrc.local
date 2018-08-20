@@ -6,7 +6,6 @@ alias "update=(cd ~/git; make all)"
 [[ -s "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 #
-export PATH="${HOME}/.local/bin:${PATH}"
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH="${PYENV_ROOT}/bin:${PYENV_ROOT}/shims:${PATH}"
