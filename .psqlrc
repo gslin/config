@@ -1,3 +1,4 @@
 \pset null ¤
 \set COMP_KEYWORD_CASE upper
+\setenv PAGER less
 \x auto
