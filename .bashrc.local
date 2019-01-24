@@ -19,3 +19,7 @@ if [ -d "${HOME}/.rbenv" ]; then
     export PATH="${HOME}/.rbenv/bin:${PATH}"
     eval "$(rbenv init - --no-rehash)"
 fi
+#
+if [ -d "${HOME}/.rvm" ]; then
+    source "${HOME}/.rvm/scripts/rvm"
+fi
