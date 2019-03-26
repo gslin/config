@@ -20,6 +20,8 @@
     rebase = true
 [push]
     default = matching
+[rerere]
+    enabled = true
 #
 [include]
     path = ~/.gitconfig.local
