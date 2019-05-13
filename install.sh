@@ -47,7 +47,13 @@ cp ${BASEDIR}/.sqliterc ~/
 cp ${BASEDIR}/.psqlrc ~/
 
 # vim
-mkdir -p ~/.vim/
-rsync -a ${BASEDIR}/.vim/ ~/.vim/
-chmod 700 ~/.vim/
-vim +BundleClean\! +BundleInstall +q +q
+if [ -e ~/.vim ]; then
+    rsync -a ${BASEDIR}/.vim/ ~/.vim/
+    chmod 700 ~/.vim/
+    vim +BundleClean\! +BundleUpdate +q +q
+else
+    mkdir -p ~/.vim/
+    rsync -a ${BASEDIR}/.vim/ ~/.vim/
+    chmod 700 ~/.vim/
+    vim +BundleClean\! +BundleInstall +q +q
+fi
