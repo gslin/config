@@ -31,7 +31,7 @@ syntax on
 "
 " color schema
 set background=dark
-colo wombat256mod
+colo Tomorrow-Night
 highlight Search cterm=none ctermbg=blue
 "
 let g:DisableAutoPHPFolding = 1
