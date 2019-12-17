@@ -68,6 +68,7 @@ Bundle "majutsushi/tagbar"
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "motus/pig.vim"
 Bundle "nathanaelkane/vim-indent-guides"
+Bundle "scrooloose/nerdtree"
 Bundle "sheerun/vim-polyglot"
 Bundle "spf13/PIV"
 Bundle "terryma/vim-expand-region"
@@ -95,3 +96,4 @@ au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 autocmd BufEnter * silent! lcd %:p:h
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
+map <C-n> :NERDTreeToggle<CR>
