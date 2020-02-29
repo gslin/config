@@ -118,8 +118,14 @@ else
     alias "ls=/bin/ls -aF"
 fi
 #
+if [[ -x /usr/bin/nvim ]]; then
+    alias "vim=nvim"
+    export EDITOR="nvim"
+else
+    export EDITOR="vim"
+fi
+#
 export BLOCKSIZE="k"
-export EDITOR="vim"
 export GIT_PAGER="less"
 export HISTFILE="$HOME/.history"
 export HISTSIZE=2000
