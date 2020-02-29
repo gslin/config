@@ -18,7 +18,6 @@ set mouse=
 set nobomb
 set nocompatible
 set nofoldenable
-set re=1
 set ruler
 set scrolloff=3
 set secure
@@ -28,6 +27,10 @@ set smartcase
 set t_Co=256
 set visualbell
 set wildmenu
+if !has('nvim')
+    set re=1
+endif
+"
 syntax on
 "
 " color schema
