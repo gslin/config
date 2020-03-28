@@ -22,6 +22,8 @@
     default = matching
 [rerere]
     enabled = true
+[user]
+    useConfigOnly = true
 #
 [include]
     path = ~/.gitconfig.local
