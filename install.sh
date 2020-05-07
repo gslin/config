@@ -46,6 +46,10 @@ cp ${BASEDIR}/.sqliterc ~/
 #
 cp ${BASEDIR}/.psqlrc ~/
 
+# nvim
+mkdir -p ~/.config || true
+ln -fs ../vim ~/.config/nvim
+
 # vim
 if [ -e ~/.vim ]; then
     rsync -a ${BASEDIR}/.vim/ ~/.vim/
