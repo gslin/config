@@ -51,13 +51,7 @@ mkdir -p ~/.config || true
 ln -fs ../.vim ~/.config/nvim
 
 # vim
-if [ -e ~/.vim ]; then
-    rsync -a ${BASEDIR}/.vim/ ~/.vim/
-    chmod 700 ~/.vim/
-    vim +BundleClean\! +BundleUpdate +q +q
-else
-    mkdir -p ~/.vim/
-    rsync -a ${BASEDIR}/.vim/ ~/.vim/
-    chmod 700 ~/.vim/
-    vim +BundleClean\! +BundleInstall +q +q
-fi
+mkdir -p ~/.vim/ || true
+rsync -a ${BASEDIR}/.vim/ ~/.vim/
+chmod 700 ~/.vim/
+vim +PlugUpdate +PlugClean\! +q +q

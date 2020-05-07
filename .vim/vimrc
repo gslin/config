@@ -56,29 +56,27 @@ vnoremap <silent> p p`]
 vnoremap <silent> y y`]
 "
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 "
-Bundle "gmarik/vundle"
-"
-Bundle "bonsaiben/bootstrap-snippets"
-Bundle "ctrlpvim/ctrlp.vim"
-Bundle "garbas/vim-snipmate"
-Bundle "godlygeek/csapprox"
-Bundle "gregsexton/gitv"
-Bundle "honza/vim-snippets"
-Bundle "itchyny/lightline.vim"
-Bundle "majutsushi/tagbar"
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "motus/pig.vim"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "scrooloose/nerdtree"
-Bundle "sheerun/vim-polyglot"
-Bundle "spf13/PIV"
-Bundle "terryma/vim-expand-region"
-Bundle "tomtom/tlib_vim"
-Bundle "tpope/vim-fugitive"
-Bundle "tpope/vim-surround"
+call plug#begin('~/.vim/plugged')
+Bundle 'bonsaiben/bootstrap-snippets'
+Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'godlygeek/csapprox'
+Bundle 'gregsexton/gitv'
+Bundle 'honza/vim-snippets'
+Bundle 'itchyny/lightline.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'motus/pig.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/nerdtree'
+Bundle 'sheerun/vim-polyglot'
+Bundle 'spf13/PIV'
+Bundle 'terryma/vim-expand-region'
+Bundle 'tomtom/tlib_vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+call plug#end()
 "
 filetype plugin indent on
 let g:ctrlp_use_caching = 0
