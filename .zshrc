@@ -27,7 +27,12 @@ alias "psu=ps -U"
 alias "s=screen"
 alias "smic=sudo make install clean"
 alias "ssh=ssh -C -e none -v"
-alias "t=telnet"
+#
+if [[ -x /opt/local/bin/gtelnet ]]; then
+    alias "t=gtelnet"
+else
+    alias "t=telnet"
+fi
 #
 db.warmup() {
     pt-find --charset=utf8 --print -h $1 | xargs -t -P8 -I% -n1 sh -c "echo 'SELECT COUNT(*) FROM %;' | mysql -h $1 > /dev/null"
