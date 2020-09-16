@@ -39,6 +39,7 @@ colo wombat256mod
 highlight Search cterm=none ctermbg=blue
 "
 let g:DisableAutoPHPFolding = 1
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 1
 hi IndentGuidesEven ctermbg=8
@@ -60,6 +61,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 Plug 'bonsaiben/bootstrap-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'garbas/vim-snipmate'
 Plug 'godlygeek/csapprox'
 Plug 'gregsexton/gitv'
