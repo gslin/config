@@ -13,8 +13,8 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init - --no-rehash)"
 fi
 #
-export N_PREFIX="$HOME/n"
-export PATH="${HOME}/n/bin:${PATH}"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 #
 if [ -d "${HOME}/.rbenv" ]; then
     export PATH="${HOME}/.rbenv/bin:${PATH}"
