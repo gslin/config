@@ -96,6 +96,7 @@ au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead *.rb set shiftwidth=2
 au BufNewFile,BufRead *.yaml set shiftwidth=2
 au BufNewFile,BufRead *.yml set shiftwidth=2
+au BufNewFile,BufRead GNUmakefile set noexpandtab
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 autocmd BufEnter * silent! lcd %:p:h
