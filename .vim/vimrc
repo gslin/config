@@ -58,6 +58,7 @@ vnoremap <silent> y y`]
 "
 filetype off
 let g:polyglot_disabled = ["autoindent", "sensible"]
+let g:snipMate = {'snippet_version': 1}
 "
 call plug#begin('~/.vim/plugged')
 Plug 'bonsaiben/bootstrap-snippets'
