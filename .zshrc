@@ -130,11 +130,13 @@ else
     export EDITOR="vim"
 fi
 #
+export ANDROID_SDK_ROOT=/usr/lib/android-sdk
 export BLOCKSIZE="k"
 export GIT_PAGER="less"
 export HISTFILE="$HOME/.history"
 export HISTSIZE=2000
 export HOMEBREW_NO_ANALYTICS=1
+export JAVA_HOME=/usr/lib/jvm/default-java
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
