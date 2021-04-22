@@ -61,6 +61,8 @@ let g:polyglot_disabled = ["autoindent", "sensible"]
 let g:snipMate = {'snippet_version': 1}
 "
 call plug#begin('~/.vim/plugged')
+Plug 'DataWraith/auto_mkdir'
+Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'bonsaiben/bootstrap-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -70,7 +72,6 @@ Plug 'gregsexton/gitv'
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
-Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'motus/pig.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
