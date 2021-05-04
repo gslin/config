@@ -31,13 +31,6 @@ if !has('nvim')
     set re=1
 endif
 "
-syntax on
-"
-" color schema
-set background=dark
-colo torte
-highlight Search cterm=none ctermbg=blue
-"
 let g:DisableAutoPHPFolding = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 let g:indent_guides_auto_colors = 0
@@ -71,6 +64,7 @@ Plug 'godlygeek/csapprox'
 Plug 'gregsexton/gitv'
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'majutsushi/tagbar'
 Plug 'motus/pig.vim'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -82,6 +76,12 @@ Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 call plug#end()
+"
+" color schema
+set background=dark
+colo onedark
+highlight Search cterm=none ctermbg=blue
+syntax on
 "
 filetype plugin indent on
 let g:ctrlp_use_caching = 0
