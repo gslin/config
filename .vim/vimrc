@@ -39,6 +39,8 @@ hi IndentGuidesEven ctermbg=8
 hi IndentGuidesOdd ctermbg=236
 "
 " mapping
+cnoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
+cnoremap <expr> <Up> pumvisible() ? "\<C-p>" : "\<Up>"
 map q: :q
 nmap <Esc>[Z <C-w>W
 nmap <F8> :TagbarToggle<CR>
