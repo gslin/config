@@ -13,7 +13,7 @@
 [core]
     preloadindex = yes
 [diff]
-    algorithm = patience
+    algorithm = minimal
 [merge]
     tool = vimdiff
 [pull]
