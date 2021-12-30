@@ -143,7 +143,7 @@ export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 export SAVEHIST=2000
 #
-if [[ -x /usr/local/bin/most || -x /usr/bin/most ]]; then
+if [[ -x /opt/homebrew/bin/most || -x /usr/local/bin/most || -x /usr/bin/most ]]; then
     export PAGER="most"
 else
     export PAGER="less"
