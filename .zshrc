@@ -80,14 +80,9 @@ key[PageDown]=${terminfo[knp]}
 key[PageUp]=${terminfo[kpp]}
 key[Up]=${terminfo[kcuu1]}
 #
-# Terminal hack (keyup/keydown) for Ubuntu 12.04 & FreeBSD
+# Terminal hack (keyup/keydown) for FreeBSD
 if [[ -f /etc/lsb-release ]]; then
     source /etc/lsb-release
-
-    if [[ "$DISTRIB_RELEASE" == "12.04" ]]; then
-        key[Down]="[B"
-        key[Up]="[A"
-    fi
 elif [[ "`uname -s`" == "FreeBSD" ]]; then
     key[Down]="[B"
     key[Up]="[A"
