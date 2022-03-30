@@ -130,13 +130,16 @@ export GIT_PAGER="less"
 export HISTFILE="$HOME/.history"
 export HISTSIZE=2000
 export HOMEBREW_NO_ANALYTICS=1
-export JAVA_HOME=/usr/lib/jvm/default-java
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 export SAVEHIST=2000
+#
+if [[ -e /usr/lib/jvm/default-java ]]; then
+    export JAVA_HOME=/usr/lib/jvm/default-java
+fi
 #
 if [[ -x /opt/homebrew/bin/most || -x /usr/local/bin/most || -x /usr/bin/most ]]; then
     export PAGER="most"

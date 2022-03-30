@@ -51,12 +51,15 @@ export BLOCKSIZE="k"
 export GIT_PAGER="less"
 export HISTTIMEFORMAT="%y/%m/%d %T "
 export HOMEBREW_NO_ANALYTICS=1
-export JAVA_HOME=/usr/lib/jvm/default-java
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
+#
+if [ -e /usr/lib/jvm/default-java ]; then
+    export JAVA_HOME=/usr/lib/jvm/default-java
+fi
 #
 # Hack for gnome-terminal
 if [ "$COLORTERM" == "gnome-terminal" -a -z "$TMUX" -a -z "$SCREEN" ]; then
