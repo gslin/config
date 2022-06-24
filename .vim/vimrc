@@ -109,3 +109,8 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 autocmd BufEnter * silent! lcd %:p:h
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
+"
+" Local
+if filereadable("~/.vim/vimrc.local")
+    source ~/.vim/vimrc.local
+endif
