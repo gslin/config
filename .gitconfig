@@ -22,6 +22,8 @@
     default = matching
 [rerere]
     enabled = true
+[submodule]
+    recursive = true
 [user]
     useConfigOnly = true
 #
