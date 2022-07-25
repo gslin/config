@@ -53,7 +53,7 @@ export HISTTIMEFORMAT="%y/%m/%d %T "
 export HOMEBREW_NO_ANALYTICS=1
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$HOME/node_modules/.bin:/usr/local/sbin:/usr/sbin:/sbin"
 export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 #
