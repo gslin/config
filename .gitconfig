@@ -14,8 +14,6 @@
     preloadindex = yes
 [diff]
     algorithm = minimal
-[init]
-    defaultBranch = master
 [merge]
     tool = vimdiff
 [pull]
