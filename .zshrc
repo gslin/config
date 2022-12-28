@@ -4,6 +4,7 @@ cd "$HOME"
 #
 alias "SYNC=sync;sync;sync"
 alias "c=clear"
+alias "ccat=pygmentize -g"
 alias "cd..=cd .."
 alias "cd...=cd ../.."
 alias "cls=clear"
