@@ -97,6 +97,7 @@ let mapleader="\<Space>"
 " other
 au BufNewFile,BufRead *.dart set shiftwidth=2
 au BufNewFile,BufRead *.go set filetype=go
+au BufNewFile,BufRead *.html set shiftwidth=2
 au BufNewFile,BufRead *.js set shiftwidth=2
 au BufNewFile,BufRead *.sls set filetype=yaml
 au BufNewFile,BufRead *.sls set shiftwidth=2
