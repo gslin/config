@@ -106,7 +106,8 @@ au BufNewFile,BufRead *.rb set shiftwidth=2
 au BufNewFile,BufRead GNUmakefile set noexpandtab
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-au FileType javascript,json,yaml set shiftwidth=2
+au FileType javascript,javascriptreact set shiftwidth=2
+au FileType json,yaml set shiftwidth=2
 autocmd BufEnter * silent! lcd %:p:h
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
