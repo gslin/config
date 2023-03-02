@@ -98,18 +98,15 @@ let mapleader="\<Space>"
 au BufNewFile,BufRead *.dart set shiftwidth=2
 au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.html set shiftwidth=2
-au BufNewFile,BufRead *.js set shiftwidth=2
 au BufNewFile,BufRead *.sls set filetype=yaml
 au BufNewFile,BufRead *.sls set shiftwidth=2
-au BufNewFile,BufRead *.mjs set shiftwidth=2
 au BufNewFile,BufRead *.mk set noexpandtab
 au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead *.rb set shiftwidth=2
-au BufNewFile,BufRead *.yaml set shiftwidth=2
-au BufNewFile,BufRead *.yml set shiftwidth=2
 au BufNewFile,BufRead GNUmakefile set noexpandtab
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+au FileType javascript,json,yaml set shiftwidth=2
 autocmd BufEnter * silent! lcd %:p:h
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
