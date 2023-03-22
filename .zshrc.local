@@ -5,7 +5,6 @@ alias "update=(cd ~/git; make all)"
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
 [[ -s "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
-[[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
 #
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
