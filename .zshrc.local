@@ -1,6 +1,9 @@
 #
 alias "update=(cd ~/git; make all)"
 #
+[[ -s /usr/share/doc/fzf/examples/completion.zsh ]] && /usr/share/doc/fzf/examples/completion.zsh
+[[ -s /usr/share/doc/fzf/examples/key-bindings.zsh ]] && /usr/share/doc/fzf/examples/key-bindings.zsh
+#
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
 [[ -s "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
