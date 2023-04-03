@@ -80,10 +80,10 @@ fi
 shopt -s checkwinsize
 shopt -s histappend
 #
-if [ "`uname -s`" == "FreeBSD" -o "`uname -s`" == "Darwin" ]; then
+if [ $(uname -s) == "FreeBSD" -o $(uname -s) == "Darwin" ]; then
     alias ls="/bin/ls -aFG"
     alias w="/usr/bin/w -i"
-elif [ "`uname -s`" == "Linux" ]; then
+elif [ $(uname -s) == "Linux" ]; then
     alias ls="/bin/ls -aF --color=always"
 else
     alias ls="/bin/ls -aF"
