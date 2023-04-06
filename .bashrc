@@ -37,10 +37,6 @@ else
     alias "t=telnet"
 fi
 #
-function db.warmup() {
-    pt-find --charset=utf8 --print -h $1 | xargs -t -P8 -I% -n1 sh -c "echo 'SELECT COUNT(*) FROM %;' | mysql -h $1 > /dev/null"
-}
-#
 if [[ -x /usr/bin/nvim || -x /usr/local/bin/nvim ]]; then
     alias vim="nvim"
     export EDITOR="nvim"
