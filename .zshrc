@@ -131,10 +131,16 @@ export HISTSIZE=2000
 export HOMEBREW_NO_ANALYTICS=1
 export LESS="-EfmrSwX"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-export PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
 export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 export SAVEHIST=2000
+#
+if [[ ! "${PATH}" =~ "(^|:)${HOME}/bin(:|$)" ]]; then
+    export PATH="${HOME}/bin:${PATH}"
+fi
+if [[ ! "${PATH}" =~ "(^|:)${HOME}/\\.local/bin(:|$)" ]]; then
+    export PATH="${HOME}/.local/bin:${PATH}"
+fi
 #
 if [[ -e /usr/lib/jvm/default-java ]]; then
     export JAVA_HOME=/usr/lib/jvm/default-java
