@@ -135,6 +135,15 @@ export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 export SAVEHIST=2000
 #
+if [[ ! "${PATH}" =~ "(^|:)/sbin(:|$)" ]]; then
+    export PATH="/sbin:${PATH}"
+fi
+if [[ ! "${PATH}" =~ "(^|:)/usr/sbin(:|$)" ]]; then
+    export PATH="/usr/sbin:${PATH}"
+fi
+if [[ ! "${PATH}" =~ "(^|:)/usr/local/sbin(:|$)" ]]; then
+    export PATH="/usr/local/sbin:${PATH}"
+fi
 if [[ ! "${PATH}" =~ "(^|:)${HOME}/bin(:|$)" ]]; then
     export PATH="${HOME}/bin:${PATH}"
 fi
