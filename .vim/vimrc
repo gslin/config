@@ -26,6 +26,7 @@ set showmatch
 set smartcase
 set t_Co=256
 set visualbell
+set wrap
 set wildmenu
 if !has('nvim')
     set re=1
