@@ -4,7 +4,7 @@ cd "${HOME}"
 #
 alias SYNC="sync; sync; sync"
 alias c="clear"
-alias cal="python3 -m calendar"
+alias cal="ccal"
 alias ccat="pygmentize -g"
 alias cd..="cd .."
 alias cd...="cd ../.."
