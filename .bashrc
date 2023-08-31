@@ -29,7 +29,7 @@ alias psr="psu root"
 alias psu="ps -U"
 alias s="screen"
 alias smic="sudo env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /usr/bin/make install clean"
-alias ssh="ssh -C -e none -v"
+alias ssh="ssh -C -e none"
 alias y="ydict.js"
 #
 if [[ -x /opt/local/bin/gtelnet ]]; then
