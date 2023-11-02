@@ -14,6 +14,9 @@
     preloadindex = yes
 [diff]
     algorithm = minimal
+[diff "sqlite3"]
+    binary = true
+    textconv = "echo '.dbconfig trusted_schema no\n.dump' | sqlite3"
 [init]
     defaultBranch = main
 [merge]
