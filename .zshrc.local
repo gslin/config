@@ -1,4 +1,7 @@
 #
+autoload -Uz compinit
+compinit
+#
 alias "update=(cd ~/git; make all)"
 #
 [[ -s /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
@@ -38,6 +41,3 @@ if [ -d "${HOME}/.rvm" ]; then
     fi
     source "${HOME}/.rvm/scripts/rvm"
 fi
-#
-autoload -Uz compinit
-compinit
