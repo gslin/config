@@ -38,3 +38,6 @@ if [ -d "${HOME}/.rvm" ]; then
     fi
     source "${HOME}/.rvm/scripts/rvm"
 fi
+#
+autoload -Uz compinit
+compinit

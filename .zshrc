@@ -45,9 +45,6 @@ if [[ "$COLORTERM" == "gnome-terminal" && -z "$TMUX" && -z "$WINDOW" ]]; then
     export TERM=xterm-256color
 fi
 #
-autoload -Uz compinit
-compinit
-#
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git*' formats "%b"
