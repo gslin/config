@@ -96,19 +96,14 @@ let g:vim_json_syntax_conceal = 0
 let mapleader="\<Space>"
 "
 " other
-au BufNewFile,BufRead *.dart set shiftwidth=2
-au BufNewFile,BufRead *.go set filetype=go
-au BufNewFile,BufRead *.html set shiftwidth=2
-au BufNewFile,BufRead *.sls set filetype=yaml
-au BufNewFile,BufRead *.sls set shiftwidth=2
 au BufNewFile,BufRead *.mk set noexpandtab
-au BufNewFile,BufRead *.psgi setf perl
-au BufNewFile,BufRead *.rb set shiftwidth=2
+au BufNewFile,BufRead *.psgi set filetype=perl
+au BufNewFile,BufRead *.sls set filetype=yaml
+au BufNewFile,BufRead *.vue set filetype=html
 au BufNewFile,BufRead GNUmakefile set noexpandtab
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-au FileType javascript,javascriptreact,typescript set shiftwidth=2
-au FileType json,yaml set shiftwidth=2
+au FileType dart,go,html,javascript,javascriptreact,json,ruby,typescript,yaml set shiftwidth=2
 autocmd BufEnter * silent! lcd %:p:h
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
