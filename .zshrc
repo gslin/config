@@ -65,19 +65,11 @@ precmd() {
 bindkey -e
 typeset -A key
 key[Delete]=${terminfo[kdch1]}
-key[Down]=${terminfo[kcud1]}
 key[End]=${terminfo[kend]}
 key[Home]=${terminfo[khome]}
 key[Insert]=${terminfo[kich1]}
 key[PageDown]=${terminfo[knp]}
 key[PageUp]=${terminfo[kpp]}
-key[Up]=${terminfo[kcuu1]}
-#
-# Terminal hack (keyup/keydown) for FreeBSD
-if [[ "`uname -s`" == "FreeBSD" ]]; then
-    key[Down]="[B"
-    key[Up]="[A"
-fi
 #
 [[ -n "${key[Delete]}" ]] && bindkey "${key[Delete]}" delete-char
 [[ -n "${key[End]}" ]] && bindkey "${key[End]}" end-of-line
@@ -92,8 +84,10 @@ bindkey "\e[1;3D" backward-word
 autoload -Uz history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "${key[Up]}" history-beginning-search-backward-end
-bindkey "${key[Down]}" history-beginning-search-forward-end
+bindkey "${terminfo[cud1]}" history-beginning-search-forward-end
+bindkey "${terminfo[cuu1]}" history-beginning-search-backward-end
+bindkey "${terminfo[kcud1]}" history-beginning-search-forward-end
+bindkey "${terminfo[kcuu1]}" history-beginning-search-backward-end
 #
 my-backward-delete-word() {
     local WORDCHARS=${WORDCHARS/\//}
