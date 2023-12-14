@@ -88,6 +88,8 @@ bindkey "${terminfo[cud1]}" history-beginning-search-forward-end
 bindkey "${terminfo[cuu1]}" history-beginning-search-backward-end
 bindkey "${terminfo[kcud1]}" history-beginning-search-forward-end
 bindkey "${terminfo[kcuu1]}" history-beginning-search-backward-end
+#
+# Workaround for tmux over macOS environment:
 bindkey "\e[A" history-beginning-search-backward-end
 bindkey "\e[B" history-beginning-search-forward-end
 #
