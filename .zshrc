@@ -84,8 +84,6 @@ bindkey "\e[1;3D" backward-word
 autoload -Uz history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "${terminfo[cud1]}" history-beginning-search-forward-end
-bindkey "${terminfo[cuu1]}" history-beginning-search-backward-end
 bindkey "${terminfo[kcud1]}" history-beginning-search-forward-end
 bindkey "${terminfo[kcuu1]}" history-beginning-search-backward-end
 #
