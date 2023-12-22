@@ -8,6 +8,8 @@
     glog = log --decorate --graph
     st = status -bs
     up = "!git remote update -p; git merge --ff-only @{u}"
+[blame]
+    ignoreRevsFile = .git-blame-ignore-revs
 [color]
     ui = auto
 [core]
