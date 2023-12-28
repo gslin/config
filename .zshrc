@@ -109,7 +109,7 @@ else
     alias "ls=/bin/ls -aF"
 fi
 #
-if [[ -x /usr/bin/nvim || -x /usr/local/bin/nvim ]]; then
+if [[ -x /opt/homebrew/bin/nvim || -x /usr/bin/nvim || -x /usr/local/bin/nvim ]]; then
     alias "vim=nvim"
     export EDITOR="nvim"
 else
