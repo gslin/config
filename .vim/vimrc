@@ -65,7 +65,7 @@ Plug 'bonsaiben/bootstrap-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'garbas/vim-snipmate'
-Plug 'github/copilot.vim'
+Plug 'github/copilot.vim', { 'tag': 'v1.13.0' }
 Plug 'godlygeek/csapprox'
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
