@@ -6,6 +6,7 @@ compinit
 #
 alias "update=(cd ~/git; make all)"
 #
+[[ -e "$HOME/go/bin" ]] && export PATH="${HOME}/go/bin:${PATH}"
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
 [[ -s "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
