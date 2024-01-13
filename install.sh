@@ -57,3 +57,6 @@ mkdir -p ~/.vim/ || true
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
 chmod 700 ~/.vim/
 vim +PlugUpdate +PlugClean\! +q +q
+#
+diff -ruN .bashrc ~/.bashrc.local
+diff -ruN .zshrc.local ~/.zshrc.local
