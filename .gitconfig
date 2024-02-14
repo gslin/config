@@ -12,6 +12,8 @@
     ignoreRevsFile = .git-blame-ignore-revs
 [color]
     ui = auto
+[column]
+    ui = auto
 [core]
     preloadindex = yes
 [diff]
