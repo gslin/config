@@ -11,6 +11,7 @@ config.font_size = 18.0
 config.hide_mouse_cursor_when_typing = false
 config.initial_cols = 132
 config.initial_rows = 43
+config.line_height = 1.0
 config.mouse_bindings = {
     {
         event = {Up = {streak = 1, button = 'Left'}},
