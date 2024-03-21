@@ -18,8 +18,13 @@ config.mouse_bindings = {
         action = act.CompleteSelection 'ClipboardAndPrimarySelection',
     },
     {
-        event = {Up = {streak = 1, button = 'Left'}},
-        mods = 'CTRL',
+        event = {Down = {streak = 1, button = 'Middle'}},
+        mods = 'NONE',
+        action = act.Nop,
+    },
+    {
+        event = {Up = {streak = 1, button = 'Middle'}},
+        mods = 'NONE',
         action = act.OpenLinkAtMouseCursor,
     }
 }
