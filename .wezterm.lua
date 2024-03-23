@@ -37,7 +37,7 @@ config.window_padding = {
 }
 
 wezterm.on('format-tab-title', function(tab, tabs, panes, config, hover, max_width)
-    return 'Tab ' .. tab.tab_id
+    return 'Tab ' .. tab.tab_index
 end)
 wezterm.on('format-window-title', function(tab, pane, tabes, panes, config)
     return 'WezTerm ' .. wezterm.version
