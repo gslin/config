@@ -9,7 +9,8 @@
     st = status -bs
     up = "!git remote update -p; git merge --ff-only @{u}"
 [blame]
-    ignoreRevsFile = .git-blame-ignore-revs
+    # cannot set to work optionally.
+    # ignoreRevsFile = .git-blame-ignore-revs
 [color]
     ui = auto
 [column]
