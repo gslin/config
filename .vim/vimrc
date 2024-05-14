@@ -34,7 +34,6 @@ endif
 "
 let g:DisableAutoPHPFolding = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
-let g:copilot_enabled = v:false
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 1
 hi IndentGuidesEven ctermbg=8
@@ -43,7 +42,7 @@ hi IndentGuidesOdd ctermbg=236
 " mapping
 cnoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
 cnoremap <expr> <Up> pumvisible() ? "\<C-p>" : "\<Up>"
-map <C-c> :Copilot enable<CR>
+map <C-c> :call plug#load('copilot.vim')<CR>:Copilot enable<CR>
 nmap <Esc>[Z <C-w>W
 nmap <F8> :TagbarToggle<CR>
 nmap <Tab> <C-w>w
@@ -65,7 +64,7 @@ Plug 'bonsaiben/bootstrap-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'garbas/vim-snipmate'
-Plug 'github/copilot.vim'
+Plug 'github/copilot.vim', { 'on': [] }
 Plug 'godlygeek/csapprox'
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
