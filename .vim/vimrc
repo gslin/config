@@ -98,7 +98,6 @@ let mapleader="\<Space>"
 au BufNewFile,BufRead *.mk set noexpandtab
 au BufNewFile,BufRead *.psgi set filetype=perl
 au BufNewFile,BufRead *.sls set filetype=yaml
-au BufNewFile,BufRead *.tsx set filetype=typescript
 au BufNewFile,BufRead *.vue set filetype=html
 au BufNewFile,BufRead GNUmakefile set noexpandtab
 au BufNewFile,BufRead Makefile set noexpandtab
