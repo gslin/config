@@ -29,7 +29,7 @@
 [pull]
     rebase = true
 [push]
-    default = matching
+    default = current
 [rerere]
     enabled = true
 [submodule]
