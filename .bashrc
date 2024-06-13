@@ -44,6 +44,7 @@ fi
 #
 export ANDROID_SDK_ROOT=/usr/lib/android-sdk
 export BLOCKSIZE="k"
+export GH_PAGER="less"
 export GIT_PAGER="less"
 export HISTTIMEFORMAT="%y/%m/%d %T "
 export HOMEBREW_NO_ANALYTICS=1
