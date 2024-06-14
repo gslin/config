@@ -29,6 +29,7 @@
 [pull]
     rebase = true
 [push]
+    autoSetupRemote = true
     default = current
 [rerere]
     enabled = true
