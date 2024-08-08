@@ -77,6 +77,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-expand-region'
 Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 call plug#end()
 "
