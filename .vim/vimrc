@@ -83,7 +83,7 @@ call plug#end()
 "
 " color schema
 set background=dark
-colo onedark
+colo wombat256mod
 highlight Search cterm=none ctermbg=blue
 syntax on
 "
