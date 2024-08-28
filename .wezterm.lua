@@ -29,6 +29,7 @@ config.mouse_bindings = {
         action = act.OpenLinkAtMouseCursor,
     }
 }
+config.selection_word_boundary = " \t\n{}[]()<>\"'`"
 config.window_padding = {
     bottom = 0,
     left = 0,
