@@ -34,7 +34,6 @@ endif
 "
 let g:DisableAutoPHPFolding = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
-let g:astro_typescript = 'enable'
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
@@ -80,7 +79,6 @@ Plug 'terryma/vim-expand-region'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'wuelnerdotexe/vim-astro'
 call plug#end()
 "
 " color schema
