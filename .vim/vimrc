@@ -79,6 +79,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'wuelnerdotexe/vim-astro'
 call plug#end()
 "
 " color schema
