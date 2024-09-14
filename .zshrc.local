@@ -22,7 +22,11 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init - --no-rehash)"
 fi
 #
-[ -s "${HOME}/.fnm/fnm" ] && eval "$(${HOME}/.fnm/fnm env)" && export PATH="${HOME}/.fnm:${PATH}"
+if [[ -x "${HOME}/.fnm/fnm" ]]; then
+    eval "$(${HOME}/.fnm/fnm env --use-on-cd)" && export PATH="${HOME}/.fnm:${PATH}"
+elif [[ -x "/opt/homebrew/bin/fnm" ]]; then
+    eval "$(/opt/homebrew/bin/fnm env --use-on-cd)"
+fi
 #
 if [ -d "${HOME}/.rbenv" ]; then
     if [[ ! "${PATH}" =~ "(^|:)${HOME}/\\.rbenv/bin(:|$)" ]]; then
