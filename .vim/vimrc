@@ -86,7 +86,10 @@ call plug#end()
 set background=dark
 colo desert
 highlight Search cterm=none ctermbg=blue
+"
+" syntax
 syntax on
+autocmd BufEnter * syntax sync fromstart
 "
 filetype plugin indent on
 let g:ctrlp_use_caching = 0
