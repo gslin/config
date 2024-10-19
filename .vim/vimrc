@@ -84,7 +84,7 @@ call plug#end()
 "
 " color schema
 set background=dark
-colo desert
+colo desert256
 highlight Search cterm=none ctermbg=blue
 "
 " syntax
