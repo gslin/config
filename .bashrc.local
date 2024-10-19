@@ -4,38 +4,6 @@ alias update="(cd ~/git; make all)"
 [[ -s /usr/share/doc/fzf/examples/completion.bash ]] && source /usr/share/doc/fzf/examples/completion.bash
 [[ -s /usr/share/doc/fzf/examples/key-bindings.bash ]] && source /usr/share/doc/fzf/examples/key-bindings.bash
 #
-[[ -e "$HOME/go/bin" ]] && export PATH="${HOME}/go/bin:${PATH}"
-[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
-[[ -s "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
-[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
-#
-export PYENV_ROOT="${HOME}/.pyenv"
-if [ -d "${PYENV_ROOT}" ]; then
-    if [[ ! "${PATH}" =~ "(^|:)${PYENV_ROOT}/bin(:|$)" ]]; then
-        export PATH="${PYENV_ROOT}/bin:${PATH}"
-    fi
-    if [[ ! "${PATH}" =~ "(^|:)${PYENV_ROOT}/shims(:|$)" ]]; then
-        export PATH="${PYENV_ROOT}/shims:${PATH}"
-    fi
-    eval "$(pyenv init - --no-rehash)"
-fi
-#
-if [[ -x "${HOME}/.fnm/fnm" ]]; then
-    eval "$(${HOME}/.fnm/fnm env --use-on-cd)" && export PATH="${HOME}/.fnm:${PATH}"
-elif [[ -x "/opt/homebrew/bin/fnm" ]]; then
-    eval "$(/opt/homebrew/bin/fnm env --use-on-cd)"
-fi
-#
-if [ -d "${HOME}/.rbenv" ]; then
-    if [[ ! "${PATH}" =~ "(^|:)${HOME}/\\.rbenv/bin(:|$)" ]]; then
-        export PATH="${HOME}/.rbenv/bin:${PATH}"
-    fi
-    eval "$(rbenv init - --no-rehash)"
-fi
-#
-if [ -d "${HOME}/.rvm" ]; then
-    if [[ ! "${PATH}" =~ "(^|:)${HOME}/\\.rvm/bin(:|$)" ]]; then
-        export PATH="${HOME}/.rvm/bin:${PATH}"
-    fi
-    source "${HOME}/.rvm/scripts/rvm"
+if command -v mise > /dev/null; then
+    eval "$(mise activate bash)"
 fi
