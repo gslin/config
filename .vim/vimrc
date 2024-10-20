@@ -79,6 +79,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'vim-scripts/desert256.vim'
 Plug 'wuelnerdotexe/vim-astro'
 call plug#end()
 "
