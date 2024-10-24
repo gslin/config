@@ -53,11 +53,20 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 #
+if [[ ! "${PATH}" =~ "(^|:)/bin(:|$)" ]]; then
+    export PATH="/bin:${PATH}"
+fi
 if [[ ! "${PATH}" =~ "(^|:)/sbin(:|$)" ]]; then
     export PATH="/sbin:${PATH}"
 fi
+if [[ ! "${PATH}" =~ "(^|:)/usr/bin(:|$)" ]]; then
+    export PATH="/usr/bin:${PATH}"
+fi
 if [[ ! "${PATH}" =~ "(^|:)/usr/sbin(:|$)" ]]; then
     export PATH="/usr/sbin:${PATH}"
+fi
+if [[ ! "${PATH}" =~ "(^|:)/usr/local/bin(:|$)" ]]; then
+    export PATH="/usr/local/bin:${PATH}"
 fi
 if [[ ! "${PATH}" =~ "(^|:)/usr/local/sbin(:|$)" ]]; then
     export PATH="/usr/local/sbin:${PATH}"
