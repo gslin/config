@@ -116,7 +116,6 @@ else
     export EDITOR="vim"
 fi
 #
-export ANDROID_SDK_ROOT=/usr/lib/android-sdk
 export BLOCKSIZE="k"
 export GH_PAGER="less"
 export GIT_PAGER="less"
