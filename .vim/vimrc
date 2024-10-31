@@ -71,11 +71,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'motus/pig.vim'
-Plug 'phha/zenburn.nvim'
 Plug 'preservim/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-expand-region'
+Plug 'tomasr/molokai'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -84,7 +84,7 @@ call plug#end()
 "
 " color schema
 set background=dark
-colo zenburn
+colo molokai
 highlight Search cterm=none ctermbg=blue
 "
 " syntax
