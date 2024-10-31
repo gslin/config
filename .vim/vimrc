@@ -72,6 +72,7 @@ Plug 'luochen1990/rainbow'
 Plug 'joshdick/onedark.vim'
 Plug 'majutsushi/tagbar'
 Plug 'motus/pig.vim'
+Plug 'phha/zenburn.nvim'
 Plug 'preservim/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
@@ -79,13 +80,12 @@ Plug 'terryma/vim-expand-region'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'vim-scripts/desert256.vim'
 Plug 'wuelnerdotexe/vim-astro'
 call plug#end()
 "
 " color schema
 set background=dark
-colo desert256
+colo zenburn
 highlight Search cterm=none ctermbg=blue
 "
 " syntax
