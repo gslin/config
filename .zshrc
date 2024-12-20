@@ -171,5 +171,6 @@ setopt prompt_subst
 zstyle ':completion:*' menu select
 #
 [[ -s "$HOME/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && . "$HOME/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+[[ -s "$HOME/git/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && . "$HOME/git/zsh-autosuggestions/zsh-autosuggestions.zsh"
 #
 [[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local"
