@@ -12,6 +12,13 @@ config.hide_mouse_cursor_when_typing = false
 config.initial_cols = 132
 config.initial_rows = 43
 config.line_height = 1.0
+config.keys = {
+    {
+        key = 'Insert',
+        mods = 'SHIFT',
+        action = act.PasteFrom 'Clipboard',
+    },
+}
 config.mouse_bindings = {
     {
         event = {Up = {streak = 1, button = 'Left'}},
@@ -27,7 +34,12 @@ config.mouse_bindings = {
         event = {Up = {streak = 1, button = 'Middle'}},
         mods = 'NONE',
         action = act.OpenLinkAtMouseCursor,
-    }
+    },
+    {
+        event = {Up = {streak = 1, button = 'Right'}},
+        mods = 'NONE',
+        action = act.PasteFrom 'Clipboard',
+    },
 }
 config.selection_word_boundary = " \t\n{}[]()<>\"'`"
 config.window_padding = {
