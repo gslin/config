@@ -84,7 +84,7 @@ call plug#end()
 "
 " color schema
 set background=dark
-colo darkblue
+colo torte
 "
 " syntax
 syntax on
