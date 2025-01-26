@@ -63,7 +63,7 @@ Plug 'bonsaiben/bootstrap-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'garbas/vim-snipmate'
-if has('nvim-0.8.0')
+if v:version >= 800 || has('nvim-0.8.0')
     Plug 'ggml-org/llama.vim'
 endif
 Plug 'godlygeek/csapprox'
