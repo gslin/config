@@ -56,7 +56,12 @@ ln -fs ../.vim ~/.config/nvim
 mkdir -p ~/.vim/ || true
 rsync -a ${BASEDIR}/.vim/ ~/.vim/
 chmod 700 ~/.vim/
-vim +PlugUpdate +PlugClean\! +q +q
+
+if command -v nvim > /dev/null; then
+    nvim +PlugUpdate +PlugClean\! +q +q
+else
+    vim +PlugUpdate +PlugClean\! +q +q
+fi
 #
 diff -ruN --color .bashrc.local ~/.bashrc.local
 diff -ruN --color .zshrc.local ~/.zshrc.local
