@@ -57,7 +57,7 @@ let g:polyglot_disabled = ["autoindent", "sensible"]
 let g:snipMate = {'snippet_version': 1}
 "
 " Local
-if filereadable("~/.vim/vimrc-preplug.local")
+if filereadable(expand("~/.vim/vimrc-preplug.local"))
     source ~/.vim/vimrc-preplug.local
 endif
 "
@@ -119,6 +119,6 @@ autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
 "
 " Local
-if filereadable("~/.vim/vimrc-post.local")
+if filereadable(expand("~/.vim/vimrc-post.local"))
     source ~/.vim/vimrc-post.local
 endif
