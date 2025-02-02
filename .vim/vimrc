@@ -56,6 +56,11 @@ let g:lightline = {'component':{'lineinfo':'%3l:%-2v'}}
 let g:polyglot_disabled = ["autoindent", "sensible"]
 let g:snipMate = {'snippet_version': 1}
 "
+" Local
+if filereadable("~/.vim/vimrc-preplug.local")
+    source ~/.vim/vimrc-preplug.local
+endif
+"
 call plug#begin('~/.vim/plugged')
 Plug 'DataWraith/auto_mkdir'
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -114,6 +119,6 @@ autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
 "
 " Local
-if filereadable("~/.vim/vimrc.local")
-    source ~/.vim/vimrc.local
+if filereadable("~/.vim/vimrc-post.local")
+    source ~/.vim/vimrc-post.local
 endif
