@@ -36,6 +36,8 @@
     enabled = true
 [submodule]
     recursive = true
+[tag]
+    sort = version:refname
 [user]
     useConfigOnly = true
 #
