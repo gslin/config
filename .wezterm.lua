@@ -6,6 +6,7 @@ local config = wezterm.config_builder()
 
 config.check_for_updates = false
 config.color_scheme = 'Tango (terminal.sexy)'
+config.enable_csi_u_key_encoding = true
 config.font = wezterm.font_with_fallback({'Cousine', 'Noto Color Emoji', 'Noto Sans CJK JP'})
 config.font_size = 18.0
 config.hide_mouse_cursor_when_typing = false
