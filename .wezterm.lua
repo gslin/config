@@ -15,6 +15,11 @@ config.initial_rows = 43
 config.line_height = 1.0
 config.keys = {
     {
+        key = 'Enter',
+        mods = 'CTRL',
+        action = act.SendString '\x1b[13;5u',
+    },
+    {
         key = 'Insert',
         mods = 'SHIFT',
         action = act.PasteFrom 'Clipboard',
