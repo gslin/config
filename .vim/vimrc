@@ -1,4 +1,5 @@
 "
+set autochdir
 set autoindent
 set backspace=indent,eol,start
 set cursorline
@@ -116,7 +117,6 @@ au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 au FileType css,dart,html,javascript,javascriptreact,json,ruby,typescript,typescriptreact,yaml set shiftwidth=2
 au FileType go set noexpandtab shiftwidth=4 tabstop=4
-autocmd BufEnter * silent! lcd %:p:h
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 map <C-n> :NERDTreeToggle<CR>
 "
