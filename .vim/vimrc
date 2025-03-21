@@ -25,6 +25,7 @@ set shiftwidth=4
 set showmatch
 set smartcase
 set t_Co=256
+set ttymouse=
 set visualbell
 set wrap
 set wildmenu
