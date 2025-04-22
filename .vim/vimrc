@@ -25,7 +25,9 @@ set shiftwidth=4
 set showmatch
 set smartcase
 set t_Co=256
-set ttymouse=
+if !has('nvim')
+    set ttymouse=
+endif
 set visualbell
 set wrap
 set wildmenu
