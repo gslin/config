@@ -27,6 +27,7 @@ alias "psr=psu root"
 alias "psu=ps -ww -U"
 alias "s=screen"
 alias "ssh=ssh -C -e none"
+alias "udac=sudo apt update; sudo apt dist-upgrade -y; sudo apt autoremove -y; sudo apt clean"
 #
 if [[ -x /opt/local/bin/gtelnet ]]; then
     alias "t=gtelnet"
