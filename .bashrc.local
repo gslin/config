@@ -7,3 +7,8 @@ alias update="(cd ~/git; make all)"
 if command -v mise > /dev/null; then
     eval "$(mise activate bash)"
 fi
+#
+# Composer
+if [[ -e "${HOME}/.config/composer/vendor/bin" ]]; then
+    export PATH="${HOME}/.config/composer/vendor/bin:${PATH}"
+fi
