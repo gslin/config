@@ -90,13 +90,9 @@ Plug 'tpope/vim-surround'
 Plug 'wuelnerdotexe/vim-astro'
 if v:version >= 901 || has('nvim-0.8.0')
     Plug 'ggml-org/llama.vim'
-    Plug 'greggh/claude-code.nvim'
     Plug 'nvim-lua/plenary.nvim'
 endif
 call plug#end()
-if v:version >= 901 || has('nvim-0.8.0')
-    lua require('claude-code').setup()
-endif
 "
 " color schema
 set background=dark
