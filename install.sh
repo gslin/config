@@ -40,13 +40,13 @@ fi
 cp ${BASEDIR}/.gdbinit ~/
 
 #
-cp ${BASEDIR}/.wgetrc ~/
+cp ${BASEDIR}/.psqlrc ~/
 
 #
 cp ${BASEDIR}/.sqliterc ~/
 
 #
-cp ${BASEDIR}/.psqlrc ~/
+cp ${BASEDIR}/.wgetrc ~/
 
 # nvim
 mkdir -p ~/.config || true
