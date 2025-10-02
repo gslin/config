@@ -37,6 +37,11 @@ if [ ! -e ~/.gitconfig.local ]; then
 fi
 
 #
+if [ ! -e ~/.npmrc ]; then
+    cp ${BASEDIR}/.npmrc ~/
+fi
+
+#
 cp ${BASEDIR}/.gdbinit ~/
 
 #
