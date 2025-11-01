@@ -78,7 +78,6 @@ Plug 'godlygeek/csapprox'
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
-Plug 'madox2/vim-ai'
 Plug 'majutsushi/tagbar'
 Plug 'motus/pig.vim'
 Plug 'preservim/vim-indent-guides'
@@ -93,6 +92,9 @@ Plug 'wuelnerdotexe/vim-astro'
 if v:version >= 901 || has('nvim-0.8.0')
     Plug 'ggml-org/llama.vim'
     Plug 'nvim-lua/plenary.nvim'
+endif
+if has('python3')
+    Plug 'madox2/vim-ai'
 endif
 call plug#end()
 "
