@@ -60,6 +60,7 @@ filetype off
 let g:lightline = {'component':{'lineinfo':'%3l:%-2v'}}
 let g:polyglot_disabled = ["autoindent", "sensible"]
 let g:snipMate = {'snippet_version': 1}
+let g:vim_ai_roles_config_file = '~/.vim/vim-ai/roles.ini'
 "
 " Local
 if filereadable(expand("~/.vim/vimrc-preplug.local"))
@@ -77,6 +78,7 @@ Plug 'godlygeek/csapprox'
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
+Plug 'madox2/vim-ai'
 Plug 'majutsushi/tagbar'
 Plug 'motus/pig.vim'
 Plug 'preservim/vim-indent-guides'
