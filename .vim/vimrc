@@ -39,7 +39,7 @@ let g:DisableAutoPHPFolding = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 1
-let g:llama_config = {'keymap_accept_full':'<C-Enter>','n_predict':256}
+let g:llama_config = {'keymap_accept_full':'<Right>','n_predict':256}
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
 "
