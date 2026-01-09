@@ -25,8 +25,13 @@ alias "psm=ps -O rss,vsz -U $USER -ww"
 alias "psr=psu root"
 alias "psu=ps -ww -U"
 alias "s=screen"
-alias "ssh=ssh -C -e none"
 alias "udac=sudo apt update; sudo apt dist-upgrade -y; sudo apt autoremove -y; sudo apt clean"
+#
+if command -v hpnssh; then
+    alias "ssh=hpnssh -C -e none"
+else
+    alias "ssh=ssh -C -e none"
+fi
 #
 if [[ -x /opt/local/bin/gtelnet ]]; then
     alias "t=gtelnet"
