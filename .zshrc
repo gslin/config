@@ -2,6 +2,8 @@
 umask 022
 cd "$HOME"
 #
+autoload -U +X compinit && compinit
+#
 alias "SYNC=sync;sync;sync"
 alias "c=clear"
 alias "ccat=pygmentize -g"
