@@ -27,7 +27,7 @@ alias "psu=ps -ww -U"
 alias "s=screen"
 alias "udac=sudo apt update; sudo apt dist-upgrade -y; sudo apt autoremove -y; sudo apt clean"
 #
-if command -v hpnssh; then
+if command -v hpnssh > /dev/null; then
     alias "ssh=hpnssh -C -e none"
 else
     alias "ssh=ssh -C -e none"
