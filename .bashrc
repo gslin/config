@@ -31,6 +31,7 @@ alias udac="sudo apt update; sudo apt dist-upgrade -y; sudo apt autoremove -y; s
 #
 if command -v hpnssh > /dev/null; then
     alias ssh="hpnssh -C -e none"
+    complete -F _ssh hpnssh
 else
     alias ssh="ssh -C -e none"
 fi
