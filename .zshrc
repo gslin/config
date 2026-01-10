@@ -2,6 +2,9 @@
 umask 022
 cd "$HOME"
 #
+autoload -Uz compinit
+compinit
+#
 alias "SYNC=sync;sync;sync"
 alias "c=clear"
 alias "ccat=pygmentize -g"
@@ -29,6 +32,7 @@ alias "udac=sudo apt update; sudo apt dist-upgrade -y; sudo apt autoremove -y; s
 #
 if command -v hpnssh > /dev/null; then
     alias "ssh=hpnssh -C -e none"
+    compdef hpnssh=ssh
 else
     alias "ssh=ssh -C -e none"
 fi

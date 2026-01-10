@@ -1,6 +1,8 @@
 #
-autoload -Uz compinit
-compinit
+if ! whence compinit >/dev/null; then
+  autoload -Uz compinit && compinit
+  compinit
+fi
 [[ -s /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
 [[ -s /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 #
