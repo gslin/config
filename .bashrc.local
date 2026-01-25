@@ -1,6 +1,7 @@
 #
 alias c0=claude
 alias c1="CLAUDE_CONFIG_DIR=~/.claude-c1 claude"
+alias c2="CLAUDE_CONFIG_DIR=~/.claude-c2 claude"
 alias update="(cd ~/git; make all)"
 #
 [[ -s /usr/share/doc/fzf/examples/completion.bash ]] && source /usr/share/doc/fzf/examples/completion.bash
