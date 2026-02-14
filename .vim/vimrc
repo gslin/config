@@ -45,6 +45,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
 " mapping
 cnoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
 cnoremap <expr> <Up> pumvisible() ? "\<C-p>" : "\<Up>"
+imap <silent><script><expr> <Right> copilot#Accept("\<Right>")
 nmap <Esc>[Z <C-w>W
 nmap <F8> :TagbarToggle<CR>
 nmap <Tab> <C-w>w
@@ -55,6 +56,7 @@ vnoremap <silent> p p`]
 vnoremap <silent> y y`]
 "
 filetype off
+let g:copilot_no_tab_map = v:true
 let g:lightline = {'component':{'lineinfo':'%3l:%-2v'}}
 let g:polyglot_disabled = ["autoindent", "sensible"]
 let g:snipMate = {'snippet_version': 1}
