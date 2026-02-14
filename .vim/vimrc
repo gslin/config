@@ -18,6 +18,7 @@ set mouse=
 set nobomb
 set nocompatible
 set nofoldenable
+set pastetoggle=<F11>
 set ruler
 set scrolloff=3
 set secure
