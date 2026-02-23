@@ -6,8 +6,8 @@ fi
 [[ -s /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
 [[ -s /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 #
-alias c0="claude"
-alias c1="CLAUDE_CONFIG_DIR=~/.claude-c1 claude"
+alias cc0="claude"
+alias cc1="CLAUDE_CONFIG_DIR=~/.claude-c1 claude"
 alias update="(cd ~/git; make all)"
 #
 if command -v mise > /dev/null; then
