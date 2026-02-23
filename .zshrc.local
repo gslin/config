@@ -9,6 +9,7 @@ fi
 alias cc0="claude"
 alias cc1="CLAUDE_CONFIG_DIR=~/.claude-c1 claude"
 alias cc2="CLAUDE_CONFIG_DIR=~/.claude-c2 claude"
+alias cp0="copilot-bwrap copilot --allow-all"
 alias update="(cd ~/git; make all)"
 #
 if command -v mise > /dev/null; then
