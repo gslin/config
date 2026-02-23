@@ -1,7 +1,8 @@
 #
-alias c0=claude
-alias c1="CLAUDE_CONFIG_DIR=~/.claude-c1 claude"
-alias c2="CLAUDE_CONFIG_DIR=~/.claude-c2 claude"
+alias cc0="claude"
+alias cc1="CLAUDE_CONFIG_DIR=~/.claude-c1 $(which claude)"
+alias cc2="CLAUDE_CONFIG_DIR=~/.claude-c2 $(which claude)"
+alias cp0="copilot-bwrap $(which copilot) --allow-all"
 alias update="(cd ~/git; make all)"
 #
 [[ -s /usr/share/doc/fzf/examples/completion.bash ]] && source /usr/share/doc/fzf/examples/completion.bash
