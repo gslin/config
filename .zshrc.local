@@ -7,9 +7,9 @@ fi
 [[ -s /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 #
 alias cc0="claude"
-alias cc1="CLAUDE_CONFIG_DIR=~/.claude-c1 --setenv CLAUDE_CONFIG_DIR ~/.claude-c1 $(which claude)"
-alias cc2="CLAUDE_CONFIG_DIR=~/.claude-c2 --setenv CLAUDE_CONFIG_DIR ~/.claude-c2 $(which claude)"
-alias cp0="copilot-bwrap $(which copilot) --allow-all"
+alias cc1="CLAUDE_CONFIG_DIR=~/.claude-c1 --setenv CLAUDE_CONFIG_DIR ~/.claude-c1 \$(which claude)"
+alias cc2="CLAUDE_CONFIG_DIR=~/.claude-c2 --setenv CLAUDE_CONFIG_DIR ~/.claude-c2 \$(which claude)"
+alias cp0="copilot-bwrap \$(which copilot) --allow-all"
 alias update="(cd ~/git; make all)"
 #
 if command -v mise > /dev/null; then
