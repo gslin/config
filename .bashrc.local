@@ -13,6 +13,11 @@ if command -v mise > /dev/null; then
     eval "$(mise activate bash)"
 fi
 #
+# sdcv
+if [[ command -v > /dev/null ]]; then
+    alias de="sdcv"
+fi
+#
 # Composer
 if [[ -e "${HOME}/.config/composer/vendor/bin" ]]; then
     export PATH="${HOME}/.config/composer/vendor/bin:${PATH}"
