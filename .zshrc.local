@@ -17,7 +17,7 @@ if command -v mise > /dev/null; then
     eval "$(mise activate zsh)"
 fi
 #
-if [[ command -v sdcv > /dev/null ]]; then
+if command -v sdcv > /dev/null; then
     alias de="sdcv"
 fi
 #
