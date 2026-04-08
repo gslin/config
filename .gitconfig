@@ -1,13 +1,19 @@
 [alias]
+    audit = "!f() { echo '=== Churn ==='; git churn; echo; echo '=== Contributors ==='; git who; echo; echo '=== Bug hotspots ==='; git bugs; echo; echo '=== Monthly pulse ==='; git pulse; echo; echo '=== Firefighting ==='; git firefight; true; }; f"
     br = branch
+    bugs = !git log -i -E --grep=\"fix|bug|broken\" --name-only --format='' | sort | uniq -c | sort -nr | head -20
+    churn = !git log --format=format: --name-only --since=\"1 year ago\" | sort | uniq -c | sort -nr | head -20
     ci = commit -v
     co = checkout
     dc = diff --cached --word-diff=color
     di = diff --word-diff=color
+    firefight = !git log --oneline --since=\"1 year ago\" | grep -iE 'revert|hotfix|emergency|rollback'
     gl = log --decorate --graph --pretty=oneline
     glog = log --decorate --graph
+    pulse = !git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
     st = status -bs
     up = "!git remote update -p; git merge --ff-only @{u}"
+    who = shortlog -sn --no-merges
 [blame]
     # cannot set to work optionally.
     # ignoreRevsFile = .git-blame-ignore-revs
