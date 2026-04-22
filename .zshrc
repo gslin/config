@@ -127,7 +127,9 @@ else
 fi
 #
 export BLOCKSIZE="k"
+export DO_NOT_TRACK=true
 export GH_PAGER="less"
+export GH_TELEMETRY=false
 export GIT_PAGER="less"
 export HISTFILE="$HOME/.history"
 export HISTSIZE=2000

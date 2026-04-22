@@ -50,8 +50,10 @@ else
 fi
 #
 export BLOCKSIZE="k"
+export DO_NOT_TRACK=true
 export GH_PAGER="less"
 export GIT_PAGER="less"
+export GH_TELEMETRY=false
 export HISTTIMEFORMAT="%y/%m/%d %T "
 export HOMEBREW_NO_ANALYTICS=1
 export LESS="-EfmrSwX"
