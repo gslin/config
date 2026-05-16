@@ -139,6 +139,7 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PYTHONDONTWRITEBYTECODE=yes
 export QUILT_PATCHES="debian/patches"
 export SAVEHIST=2000
+export npm_config_ignore_scripts=true
 #
 if [[ ! "${PATH}" =~ "(^|:)/bin(:|$)" ]]; then
     export PATH="/bin:${PATH}"
