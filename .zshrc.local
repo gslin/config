@@ -10,7 +10,7 @@ alias cc0="claude-bwrap \$(which claude) --dangerously-skip-permissions"
 alias cc1="CLAUDE_CONFIG_DIR=~/.claude-c1 claude-bwrap --setenv CLAUDE_CONFIG_DIR ~/.claude-c1 \$(which claude) --dangerously-skip-permissions"
 alias cx0="codex-bwrap \$(which codex) --yolo"
 alias gb0="grok-bwrap \$(which grok) --yolo"
-alias oc0="opencode-bwrap \$(which opencode)"
+alias oc0="opencode-bwrap \$(which opencode) --yolo"
 alias update="(cd ~/git; make all)"
 #
 if command -v mise > /dev/null; then
