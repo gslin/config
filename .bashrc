@@ -36,6 +36,10 @@ else
     alias ssh="ssh -C -e none"
 fi
 #
+if command -v mise > /dev/null; then
+    eval "$(mise activate bash)"
+fi
+#
 if [[ -x /opt/local/bin/gtelnet ]]; then
     alias "t=gtelnet"
 else

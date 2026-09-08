@@ -9,10 +9,6 @@ alias update="(cd ~/git; make all)"
 [[ -s /usr/share/doc/fzf/examples/completion.bash ]] && source /usr/share/doc/fzf/examples/completion.bash
 [[ -s /usr/share/doc/fzf/examples/key-bindings.bash ]] && source /usr/share/doc/fzf/examples/key-bindings.bash
 #
-if command -v mise > /dev/null; then
-    eval "$(mise activate bash)"
-fi
-#
 # sdcv
 if [[ command -v > /dev/null ]]; then
     alias de="sdcv"

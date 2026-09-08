@@ -13,10 +13,6 @@ alias gb0="grok-bwrap \$(which grok) --yolo"
 alias oc0="opencode-bwrap \$(which opencode) --yolo"
 alias update="(cd ~/git; make all)"
 #
-if command -v mise > /dev/null; then
-    eval "$(mise activate zsh)"
-fi
-#
 if command -v sdcv > /dev/null; then
     alias de="sdcv"
 fi
