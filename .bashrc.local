@@ -10,6 +10,6 @@ alias update="(cd ~/git; make all)"
 [[ -s /usr/share/doc/fzf/examples/key-bindings.bash ]] && source /usr/share/doc/fzf/examples/key-bindings.bash
 #
 # sdcv
-if [[ command -v > /dev/null ]]; then
+if command -v > /dev/null; then
     alias de="sdcv"
 fi
